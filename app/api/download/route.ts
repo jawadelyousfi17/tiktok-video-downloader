@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 
+import { isSameOriginRequest } from "@/services/origin";
 import { checkRateLimit, clientKey, rateLimitHeaders } from "@/services/rate-limit";
 
 /**
@@ -44,6 +45,13 @@ function dispositionHeader(filename: string): string {
  * stream the body straight back with Content-Disposition: attachment.
  */
 export async function GET(request: Request) {
+  // Block off-site callers before spending any rate-limit budget. A plain
+  // anchor-click from our own page sets Referer (no Origin), which the
+  // helper accepts as same-origin.
+  if (!isSameOriginRequest(request)) {
+    return new NextResponse("Forbidden", { status: 403 });
+  }
+
   const decision = checkRateLimit(
     `download:${clientKey(request)}`,
     DOWNLOAD_LIMIT,

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 
-import { isTikTokUrl } from "@/lib/tiktok";
+import { normalizeTikTokUrl } from "@/lib/tiktok";
+import { isSameOriginRequest } from "@/services/origin";
 import {
   checkRateLimit,
   clientKey,
@@ -13,7 +14,13 @@ import { TikTokFetchError, fetchTikTok } from "@/services/tiktok";
  * returns the upstream error message verbatim — it might leak RapidAPI
  * internals or be unfriendly machine text.
  */
-type ErrorCode = "invalid-url" | "not-found" | "rate-limited" | "server" | "missing-config";
+type ErrorCode =
+  | "invalid-url"
+  | "not-found"
+  | "rate-limited"
+  | "server"
+  | "missing-config"
+  | "forbidden";
 
 /**
  * Per-IP cap on /api/fetch. RapidAPI is billed per request, so this is
@@ -29,6 +36,12 @@ function reply(code: ErrorCode, status: number, headers: Record<string, string> 
 }
 
 export async function POST(request: Request) {
+  // Same-origin gate runs before the rate limiter so off-site callers
+  // don't get to consume any per-IP budget at all.
+  if (!isSameOriginRequest(request)) {
+    return reply("forbidden", 403);
+  }
+
   const decision = checkRateLimit(
     `fetch:${clientKey(request)}`,
     FETCH_LIMIT,
@@ -52,10 +65,13 @@ export async function POST(request: Request) {
       ? String((body as { url: unknown }).url ?? "")
       : "";
 
-  if (!isTikTokUrl(url)) return reply("invalid-url", 400, limitHeaders);
+  // Defensive normalization: accept protocol-less input from any caller,
+  // not just our own form. Returns null when the URL isn't TikTok.
+  const normalized = normalizeTikTokUrl(url);
+  if (!normalized) return reply("invalid-url", 400, limitHeaders);
 
   try {
-    const result = await fetchTikTok(url);
+    const result = await fetchTikTok(normalized);
     return NextResponse.json({ ok: true, result }, { headers: limitHeaders });
   } catch (err) {
     if (err instanceof TikTokFetchError) {

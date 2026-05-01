@@ -1,6 +1,7 @@
 import archiver from "archiver";
 import { Readable } from "node:stream";
 
+import { isSameOriginRequest } from "@/services/origin";
 import { checkRateLimit, clientKey, rateLimitHeaders } from "@/services/rate-limit";
 
 /**
@@ -51,6 +52,10 @@ interface ZipRequest {
  * stops abuse — a caller cannot smuggle arbitrary hosts through us.
  */
 export async function POST(request: Request) {
+  if (!isSameOriginRequest(request)) {
+    return new Response("Forbidden", { status: 403 });
+  }
+
   const decision = checkRateLimit(
     `zip:${clientKey(request)}`,
     ZIP_LIMIT,

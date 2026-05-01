@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { DownloadResult as ResultCard } from "@/components/download-result";
 import { cn } from "@/lib/utils";
-import { isTikTokUrl } from "@/lib/tiktok";
+import { isTikTokUrl, normalizeTikTokUrl } from "@/lib/tiktok";
 import type { Dictionary } from "@/types/dictionary";
 import type { Locale } from "@/types/locale";
 import type { DownloadResult } from "@/types/tiktok";
@@ -101,7 +101,12 @@ export function DownloaderForm({ formDict, resultDict, locale }: DownloaderFormP
       setStatus({ kind: "error", message: formDict.errorEmpty });
       return;
     }
-    if (!isTikTokUrl(trimmed)) {
+    // Normalize before posting so a paste like "tiktok.com/@user/..."
+    // arrives at the API as a fully-formed https URL. The function
+    // returns null for non-TikTok input, which doubles as the validity
+    // check we used to do separately.
+    const normalized = normalizeTikTokUrl(trimmed);
+    if (!normalized) {
       setStatus({ kind: "error", message: formDict.errorInvalid });
       return;
     }
@@ -115,7 +120,7 @@ export function DownloaderForm({ formDict, resultDict, locale }: DownloaderFormP
       const response = await fetch("/api/fetch", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ url: trimmed }),
+        body: JSON.stringify({ url: normalized }),
         signal: controller.signal,
       });
       const payload = (await response.json()) as FetchResponse;

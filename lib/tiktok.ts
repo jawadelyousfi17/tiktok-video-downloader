@@ -13,14 +13,37 @@ const TIKTOK_HOSTS = [
   "vt.tiktok.com",
 ];
 
-export function isTikTokUrl(value: string): boolean {
-  const trimmed = value.trim();
-  if (!trimmed) return false;
+/**
+ * Take a raw user-pasted string and return a fully-formed https TikTok
+ * URL, or null if the input doesn't look like a TikTok link.
+ *
+ * Why we don't just rely on `new URL()`: TikTok shares come from the app
+ * already protocoled (https://), but copy-pasting from a tap-and-hold
+ * menu, the address bar of a desktop browser, or a chat client often
+ * drops the scheme — `tiktok.com/@user/video/123` is a real shape we
+ * have to accept. Prepending `https://` before parsing fixes that.
+ */
+export function normalizeTikTokUrl(raw: string): string | null {
+  const trimmed = raw.trim();
+  if (!trimmed) return null;
+
+  const withProtocol = /^https?:\/\//i.test(trimmed) ? trimmed : `https://${trimmed}`;
+
+  let url: URL;
   try {
-    const url = new URL(trimmed);
-    if (url.protocol !== "https:" && url.protocol !== "http:") return false;
-    return TIKTOK_HOSTS.includes(url.hostname.toLowerCase());
+    url = new URL(withProtocol);
   } catch {
-    return false;
+    return null;
   }
+
+  if (url.protocol !== "https:" && url.protocol !== "http:") return null;
+  if (!TIKTOK_HOSTS.includes(url.hostname.toLowerCase())) return null;
+  // Always send https upstream — TikTok serves it, and the rate-limiter
+  // / cache key normalization downstream assumes a consistent scheme.
+  url.protocol = "https:";
+  return url.toString();
+}
+
+export function isTikTokUrl(value: string): boolean {
+  return normalizeTikTokUrl(value) !== null;
 }
