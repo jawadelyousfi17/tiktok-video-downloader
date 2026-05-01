@@ -1,13 +1,22 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { DownloadResult as ResultCard } from "@/components/download-result";
+import { ScrollToResult } from "@/components/scroll-to-result";
 import { Hero } from "@/components/sections/hero";
 import { Features } from "@/components/sections/features";
 import { HowItWorks } from "@/components/sections/how-it-works";
 import { FaqSection } from "@/components/sections/faq";
-import { isLocale, localeCodes } from "@/lib/i18n/config";
+import { isLocale, localeCodes, localePath } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { buildPageMetadata } from "@/lib/i18n/metadata";
+import { fetchForPage } from "@/services/render-fetch";
+
+function firstString(value: string | string[] | undefined): string | null {
+  if (!value) return null;
+  if (Array.isArray(value)) return value[0] ?? null;
+  return value;
+}
 
 export function generateStaticParams() {
   return localeCodes.map((lang) => ({ lang }));
@@ -15,26 +24,32 @@ export function generateStaticParams() {
 
 export async function generateMetadata({
   params,
+  searchParams,
 }: PageProps<"/[lang]/carousel">): Promise<Metadata> {
   const { lang } = await params;
   if (!isLocale(lang)) return {};
-  return buildPageMetadata({
+  const meta = await buildPageMetadata({
     locale: lang,
     pathSegment: "/carousel",
     variantKey: "carousel",
   });
+  const sp = await searchParams;
+  if (firstString(sp.url)) meta.robots = { index: false, follow: true };
+  return meta;
 }
 
-/**
- * Targets "tiktok carousel downloader" / "tiktok slideshow downloader".
- * Carousel and photos are the same upstream feature on TikTok (image
- * posts) so this page exists primarily for keyword distinction; the
- * underlying form and result card behavior are identical.
- */
-export default async function CarouselPage({ params }: PageProps<"/[lang]/carousel">) {
+export default async function CarouselPage({
+  params,
+  searchParams,
+}: PageProps<"/[lang]/carousel">) {
   const { lang } = await params;
   if (!isLocale(lang)) notFound();
+  const sp = await searchParams;
   const dict = await getDictionary(lang);
+  const rawUrl = firstString(sp.url);
+  const fetched = await fetchForPage(rawUrl, dict);
+
+  const resetHref = localePath(lang, "/carousel");
 
   return (
     <>
@@ -43,7 +58,25 @@ export default async function CarouselPage({ params }: PageProps<"/[lang]/carous
         locale={lang}
         heading={dict.variants.carousel.h1}
         description={dict.variants.carousel.subtitle}
+        initialUrl={fetched.normalizedUrl ?? rawUrl}
+        errorMessage={fetched.errorMessage}
       />
+
+      {fetched.result ? (
+        <section
+          id="result"
+          className="mx-auto -mt-2 max-w-3xl scroll-mt-16 px-4 pb-12 sm:px-6"
+        >
+          <ResultCard
+            result={fetched.result}
+            dict={dict.result}
+            locale={lang}
+            resetHref={resetHref}
+          />
+          <ScrollToResult />
+        </section>
+      ) : null}
+
       <Features dict={dict} />
       <HowItWorks dict={dict} />
       <FaqSection data={dict.faq.carousel} />

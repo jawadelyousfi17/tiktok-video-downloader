@@ -20,6 +20,10 @@ interface HeroProps {
   heading?: string;
   /** Optional subtitle override matching the variant H1. */
   description?: string;
+  /** Pre-fills the form input from ?url= when the page is a result render. */
+  initialUrl?: string | null;
+  /** Localized error string from the server-side fetch (or null on success). */
+  errorMessage?: string | null;
 }
 
 /**
@@ -29,7 +33,14 @@ interface HeroProps {
  * with the primary action. There's only one heading on the page now —
  * the old marketing-style hero block was removed to avoid duplication.
  */
-export function Hero({ dict, locale, heading, description }: HeroProps) {
+export function Hero({
+  dict,
+  locale: _locale,
+  heading,
+  description,
+  initialUrl,
+  errorMessage,
+}: HeroProps) {
   const headingText = heading ?? dict.hero.title;
   const descriptionText = description ?? dict.hero.subtitle;
   const trustBadges = [
@@ -64,8 +75,8 @@ export function Hero({ dict, locale, heading, description }: HeroProps) {
         <div className="-mx-4 w-screen sm:mx-0 sm:w-full sm:max-w-2xl">
           <DownloaderForm
             formDict={dict.hero.form}
-            resultDict={dict.result}
-            locale={locale}
+            initialUrl={initialUrl}
+            errorMessage={errorMessage}
           />
         </div>
 
