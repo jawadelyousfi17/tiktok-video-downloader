@@ -9,20 +9,32 @@ import type { Dictionary } from "@/types/dictionary";
 import type { DownloadResult } from "@/types/tiktok";
 
 /**
- * Per-IP cap for the server-rendered fetch path. Same numbers we used to
- * enforce on /api/fetch — the limit follows the same rationale: protect
- * the metered RapidAPI quota from sustained automated traffic.
+ * Per-IP cap for the server-rendered fetch path. Same numbers we used
+ * to enforce on /api/fetch — protects the metered RapidAPI quota from
+ * sustained automated traffic.
  */
 const FETCH_LIMIT = 15;
 const FETCH_WINDOW_MS = 60_000;
 
-export interface PageFetchOutcome {
-  /** The fetched download data, or null when there was no URL or an error. */
-  result: DownloadResult | null;
-  /** Localized error message to show inside the form, or null on success. */
-  errorMessage: string | null;
-  /** Normalized https URL when the input parsed; pre-fills the form input. */
-  normalizedUrl: string | null;
+/**
+ * Synchronous URL validation. Pages call this during their render to
+ * decide whether to suspend on the fetch (valid URL) or surface an
+ * "invalid URL" error in the form (no upstream call needed).
+ *
+ * Returning the normalized URL (rather than just a boolean) means the
+ * caller can pass the cleaned-up form back into the input as the
+ * pre-filled value, so users see what we actually used.
+ */
+export function normalizeForRender(
+  rawUrl: string | null | undefined,
+  dict: Dictionary,
+): { normalized: string | null; formError: string | null } {
+  if (!rawUrl) return { normalized: null, formError: null };
+  const normalized = normalizeTikTokUrl(rawUrl);
+  if (!normalized) {
+    return { normalized: null, formError: dict.hero.form.errorInvalid };
+  }
+  return { normalized, formError: null };
 }
 
 async function clientIp(): Promise<string> {
@@ -35,69 +47,43 @@ async function clientIp(): Promise<string> {
   return candidate.split(",")[0]?.trim() || "anonymous";
 }
 
+export interface AsyncFetchOutcome {
+  result: DownloadResult | null;
+  errorMessage: string | null;
+}
+
 /**
- * Run the upstream fetch from inside a server-rendered page. Mirrors the
- * old /api/fetch route — same rate-limit + cache + error mapping — but
- * the data lands inside the HTML rather than as a JSON response, so
- * there's no public JSON endpoint for casual scrapers to call.
+ * Run the upstream fetch. Called from inside a Suspense boundary so the
+ * page shell (form, hero, features, FAQ) flushes immediately and the
+ * loader streams in the result chunk only when ready.
  *
- * Always returns; never throws. Errors are mapped to localized strings
- * the parent page passes into the form's error display.
+ * The URL must already be normalized — sync validation in
+ * `normalizeForRender` handles that. Always returns an outcome; never
+ * throws.
  */
-export async function fetchForPage(
-  rawUrl: string | null | undefined,
+export async function fetchAfterNormalize(
+  normalizedUrl: string,
   dict: Dictionary,
-): Promise<PageFetchOutcome> {
-  if (!rawUrl) return { result: null, errorMessage: null, normalizedUrl: null };
-
-  const normalized = normalizeTikTokUrl(rawUrl);
-  if (!normalized) {
-    return {
-      result: null,
-      errorMessage: dict.hero.form.errorInvalid,
-      normalizedUrl: null,
-    };
-  }
-
+): Promise<AsyncFetchOutcome> {
   const decision = checkRateLimit(`fetch:${await clientIp()}`, FETCH_LIMIT, FETCH_WINDOW_MS);
   if (!decision.allowed) {
-    return {
-      result: null,
-      errorMessage: dict.hero.form.errorRateLimit,
-      normalizedUrl: normalized,
-    };
+    return { result: null, errorMessage: dict.hero.form.errorRateLimit };
   }
 
   try {
-    const result = await fetchTikTok(normalized);
-    return { result, errorMessage: null, normalizedUrl: normalized };
+    const result = await fetchTikTok(normalizedUrl);
+    return { result, errorMessage: null };
   } catch (err) {
     if (err instanceof TikTokFetchError) {
       switch (err.code) {
         case "not-found":
-          return {
-            result: null,
-            errorMessage: dict.hero.form.errorFetch,
-            normalizedUrl: normalized,
-          };
+          return { result: null, errorMessage: dict.hero.form.errorFetch };
         case "rate-limited":
-          return {
-            result: null,
-            errorMessage: dict.hero.form.errorRateLimit,
-            normalizedUrl: normalized,
-          };
+          return { result: null, errorMessage: dict.hero.form.errorRateLimit };
         default:
-          return {
-            result: null,
-            errorMessage: dict.hero.form.errorServer,
-            normalizedUrl: normalized,
-          };
+          return { result: null, errorMessage: dict.hero.form.errorServer };
       }
     }
-    return {
-      result: null,
-      errorMessage: dict.hero.form.errorServer,
-      normalizedUrl: normalized,
-    };
+    return { result: null, errorMessage: dict.hero.form.errorServer };
   }
 }

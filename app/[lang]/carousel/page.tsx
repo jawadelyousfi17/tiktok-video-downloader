@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 
-import { DownloadResult as ResultCard } from "@/components/download-result";
-import { ScrollToResult } from "@/components/scroll-to-result";
+import { AsyncResult } from "@/components/async-result";
+import { ResultLoader } from "@/components/result-loader";
 import { Hero } from "@/components/sections/hero";
 import { Features } from "@/components/sections/features";
 import { HowItWorks } from "@/components/sections/how-it-works";
@@ -10,7 +11,7 @@ import { FaqSection } from "@/components/sections/faq";
 import { isLocale, localeCodes, localePath } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { buildPageMetadata } from "@/lib/i18n/metadata";
-import { fetchForPage } from "@/services/render-fetch";
+import { normalizeForRender } from "@/services/render-fetch";
 
 function firstString(value: string | string[] | undefined): string | null {
   if (!value) return null;
@@ -47,7 +48,7 @@ export default async function CarouselPage({
   const sp = await searchParams;
   const dict = await getDictionary(lang);
   const rawUrl = firstString(sp.url);
-  const fetched = await fetchForPage(rawUrl, dict);
+  const { normalized, formError } = normalizeForRender(rawUrl, dict);
 
   const resetHref = localePath(lang, "/carousel");
 
@@ -58,23 +59,19 @@ export default async function CarouselPage({
         locale={lang}
         heading={dict.variants.carousel.h1}
         description={dict.variants.carousel.subtitle}
-        initialUrl={fetched.normalizedUrl ?? rawUrl}
-        errorMessage={fetched.errorMessage}
+        initialUrl={normalized ?? rawUrl}
+        errorMessage={formError}
       />
 
-      {fetched.result ? (
-        <section
-          id="result"
-          className="mx-auto -mt-2 max-w-3xl scroll-mt-16 px-4 pb-12 sm:px-6"
-        >
-          <ResultCard
-            result={fetched.result}
-            dict={dict.result}
+      {normalized ? (
+        <Suspense fallback={<ResultLoader />}>
+          <AsyncResult
+            url={normalized}
+            dict={dict}
             locale={lang}
             resetHref={resetHref}
           />
-          <ScrollToResult />
-        </section>
+        </Suspense>
       ) : null}
 
       <Features dict={dict} />
