@@ -73,6 +73,7 @@ export default async function HomePage({
           />
         </Suspense>
       ) : null}
+      
 
       <Features dict={dict} />
       <HowItWorks dict={dict} />
