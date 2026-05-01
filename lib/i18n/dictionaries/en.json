@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "title": "TikTok Video Downloader — Save TikTok Videos Without Watermark",
+    "description": "Paste a TikTok link and save the video to your phone or computer. No watermark, no app, no sign up. Works for any public TikTok.",
+    "ogTitle": "TikTok Video Downloader",
+    "ogDescription": "Free TikTok downloader. Paste the link, get the video. No watermark."
+  },
+  "nav": {
+    "skipToContent": "Skip to content",
+    "brand": "TikSaver",
+    "tagline": "Free TikTok downloader",
+    "languageMenu": "Choose language",
+    "currentLanguage": "Language"
+  },
+  "hero": {
+    "badge": "No watermark. No sign up.",
+    "title": "Download TikTok videos without watermark",
+    "subtitle": "Paste a TikTok link below and we will get the video ready to download in HD. It works on your phone, your laptop, anywhere.",
+    "form": {
+      "label": "TikTok video link",
+      "placeholder": "Paste your TikTok link here",
+      "paste": "Paste",
+      "pasted": "Pasted",
+      "clear": "Clear",
+      "submit": "Download",
+      "submitting": "Working on it",
+      "errorEmpty": "Paste a TikTok link first.",
+      "errorInvalid": "That does not look like a TikTok link. Try again.",
+      "errorClipboard": "We could not read your clipboard. Paste the link by hand.",
+      "successHint": "Looks good. Tap Download to grab the video.",
+      "errorFetch": "We could not fetch this one. The post may be private or no longer up.",
+      "errorRateLimit": "Too many requests for now. Wait a moment and try again.",
+      "errorServer": "Something went wrong on our side. Please try again."
+    },
+    "trust": {
+      "noWatermark": "No watermark",
+      "hd": "HD quality",
+      "free": "100% free",
+      "private": "Nothing saved on our side"
+    }
+  },
+  "features": {
+    "eyebrow": "Why people use it",
+    "title": "Built for the way you actually use TikTok",
+    "subtitle": "Three things matter when you save a video. We took care of all three.",
+    "items": [
+      {
+        "title": "Clean video, no watermark",
+        "body": "Get the original frame without the TikTok logo stamped over it. Perfect for reposting or saving for later."
+      },
+      {
+        "title": "Fast on any device",
+        "body": "The page is light, the input is one tap, and the file lands in your downloads in a few seconds."
+      },
+      {
+        "title": "Audio only when you want it",
+        "body": "Pull just the sound from a video and save it as MP3. Handy for sounds you want to remix or use elsewhere."
+      }
+    ]
+  },
+  "how": {
+    "eyebrow": "How it works",
+    "title": "Three steps, no friction",
+    "steps": [
+      {
+        "title": "Copy the TikTok link",
+        "body": "Open the TikTok app or tiktok.com, tap Share on the video, then Copy link."
+      },
+      {
+        "title": "Paste it up there",
+        "body": "Drop the link into the box at the top of the page. We will check that it is a real TikTok URL."
+      },
+      {
+        "title": "Save the video",
+        "body": "Pick HD video or MP3 audio, then save the file. That is the whole thing."
+      }
+    ]
+  },
+  "result": {
+    "durationLabel": "Duration",
+    "seconds": "sec",
+    "byAuthor": "by",
+    "photoCount": "{count} photos",
+    "downloadHd": "Download HD",
+    "downloadStandard": "Download video",
+    "downloadAudio": "Save audio (MP3)",
+    "downloadPhoto": "Save photo",
+    "downloadAll": "Download all photos",
+    "preparingZip": "Bundling photos",
+    "saving": "Saving",
+    "newSearch": "Download another video"
+  },
+  "footer": {
+    "tagline": "Made for creators and quiet savers.",
+    "rights": "All rights reserved.",
+    "disclaimer": "Not affiliated with TikTok. Please respect creators and only download videos you have the right to use."
+  },
+  "variants": {
+    "mp3": {
+      "metaTitle": "TikTok MP3 Downloader — Save Audio from TikTok Videos",
+      "metaDescription": "Convert any TikTok video into an MP3 in seconds. Paste the link, get the audio. No watermark, no app, no sign up.",
+      "ogTitle": "TikTok MP3 Downloader",
+      "ogDescription": "Free TikTok to MP3 converter. Paste the link, get the audio.",
+      "h1": "Download TikTok audio as MP3",
+      "subtitle": "Pull the sound out of any TikTok and save it as a clean MP3 file. Works for songs, voiceovers, and original audio."
+    },
+    "photos": {
+      "metaTitle": "TikTok Photo Downloader — Save Photos from TikTok Posts",
+      "metaDescription": "Save photos from TikTok image posts in full quality. Paste the link to grab a single picture or all of them at once.",
+      "ogTitle": "TikTok Photo Downloader",
+      "ogDescription": "Save TikTok photos in full quality. Paste the link, pick the picture.",
+      "h1": "Download TikTok photos in full quality",
+      "subtitle": "Get the original photos from any TikTok image post. Save one picture, several, or all of them at once."
+    },
+    "carousel": {
+      "metaTitle": "TikTok Carousel Downloader — Save Slideshow Posts",
+      "metaDescription": "Download every photo from a TikTok carousel as a single zip. No app, no sign up, full quality images.",
+      "ogTitle": "TikTok Carousel Downloader",
+      "ogDescription": "Save TikTok carousel posts as a zip. Full quality, one click.",
+      "h1": "Download TikTok carousel posts",
+      "subtitle": "Paste a TikTok carousel link and get every photo bundled in a single zip file. Audio works too."
+    }
+  },
+  "tools": {
+    "sectionLabel": "More TikTok tools",
+    "home": "Video downloader",
+    "mp3": "MP3 downloader",
+    "photos": "Photo downloader",
+    "carousel": "Carousel downloader"
+  },
+  "faq": {
+    "home": {
+      "sectionTitle": "Common questions",
+      "items": [
+        { "question": "How do I download a TikTok video?", "answer": "Open the TikTok app or tiktok.com, tap Share on the video, and choose Copy link. Paste the link into the box at the top of this page and pick HD or standard quality." },
+        { "question": "Will the saved video have a watermark?", "answer": "No. We give you back the original frame without the TikTok logo overlaid, so the video is ready to repost or save for later." },
+        { "question": "Is the downloader free?", "answer": "Yes. Every feature here is free. No sign up, no app to install, no credit card." },
+        { "question": "What video quality can I get?", "answer": "HD when the original was uploaded in HD, otherwise the highest quality TikTok stored for that post." },
+        { "question": "Does it work on iPhone and Android?", "answer": "Yes. The page is built mobile-first, so pasting and saving both work directly from your phone's browser." }
+      ]
+    },
+    "mp3": {
+      "sectionTitle": "TikTok MP3 questions",
+      "items": [
+        { "question": "How do I save TikTok audio as MP3?", "answer": "Paste a TikTok video link in the box at the top, then look for Save audio (MP3) in the result card. The audio downloads as an .mp3 file." },
+        { "question": "Does the MP3 have any watermark or voice tag?", "answer": "No. The MP3 is the clean original sound from the video, with nothing layered on top." },
+        { "question": "Can I extract music from any TikTok?", "answer": "Yes, as long as the post is public. Both regular videos and slideshow posts include the original audio track." },
+        { "question": "What is the MP3 quality?", "answer": "We use the highest quality audio stream TikTok serves. Most files come out around 128 kbps, which is plenty for sharing or remixing." },
+        { "question": "Do I need to install anything?", "answer": "No. Everything runs in the browser. Paste the link, save the file, done." }
+      ]
+    },
+    "photos": {
+      "sectionTitle": "TikTok photo questions",
+      "items": [
+        { "question": "How do I save photos from TikTok?", "answer": "Paste a link to a TikTok photo post. Each picture in the result card has its own Save button." },
+        { "question": "Are the photos full resolution?", "answer": "Yes. We serve the original-size image TikTok hosts, with no compression on our side." },
+        { "question": "Can I save all photos at once?", "answer": "Yes. Tap Download all photos and we will bundle every image into a single zip file." },
+        { "question": "Is the audio of the photo post included?", "answer": "The audio comes as a separate MP3 button right above the photo grid, so you can save it on its own." },
+        { "question": "Does it work on iPhone and Android?", "answer": "Yes. Pasting and saving both work directly from your phone's browser." }
+      ]
+    },
+    "carousel": {
+      "sectionTitle": "TikTok carousel questions",
+      "items": [
+        { "question": "What is a TikTok carousel?", "answer": "A carousel, sometimes called a photo post or slideshow, is a TikTok post made of multiple photos instead of a single video." },
+        { "question": "How do I download a TikTok carousel?", "answer": "Paste the post link at the top of the page. We show every photo in a grid and offer a Download all button to bundle the whole set." },
+        { "question": "Will I get every photo in the post?", "answer": "Yes. The zip contains every image in the original order, in full quality." },
+        { "question": "Is the audio inside the zip?", "answer": "No, we keep the audio as a separate MP3 button so you can save it on its own without unpacking the zip." },
+        { "question": "Why are carousels sometimes called slideshows?", "answer": "Different apps use different names. The data is the same: a TikTok post made of several photos." }
+      ]
+    }
+  }
+}

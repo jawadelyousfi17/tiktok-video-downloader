@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "title": "Download Video TikTok Tanpa Watermark",
+    "description": "Tempel link TikTok dan simpan videonya di HP atau laptop. Tanpa watermark, tanpa aplikasi, tanpa daftar.",
+    "ogTitle": "Pengunduh TikTok",
+    "ogDescription": "Pengunduh TikTok gratis. Tempel linknya, video langsung jadi. Tanpa watermark."
+  },
+  "nav": {
+    "skipToContent": "Lewati ke konten",
+    "brand": "TikSaver",
+    "tagline": "Pengunduh TikTok gratis",
+    "languageMenu": "Pilih bahasa",
+    "currentLanguage": "Bahasa"
+  },
+  "hero": {
+    "badge": "Tanpa watermark. Tanpa daftar.",
+    "title": "Unduh video TikTok tanpa watermark",
+    "subtitle": "Tempel link TikTok di bawah, kami siapkan videonya dalam HD biar tinggal kamu unduh. Jalan di HP, di laptop, di mana saja.",
+    "form": {
+      "label": "Link video TikTok",
+      "placeholder": "Tempel link TikTok kamu di sini",
+      "paste": "Tempel",
+      "pasted": "Sudah ditempel",
+      "clear": "Hapus",
+      "submit": "Unduh",
+      "submitting": "Sedang diproses",
+      "errorEmpty": "Tempel dulu link TikTok.",
+      "errorInvalid": "Sepertinya itu bukan link TikTok. Coba lagi.",
+      "errorClipboard": "Kami tidak bisa membaca clipboard. Tempel link secara manual.",
+      "successHint": "Sudah pas. Tap Unduh untuk ambil videonya.",
+      "errorFetch": "Tidak bisa mengambil video ini. Mungkin privat atau sudah dihapus.",
+      "errorRateLimit": "Permintaan terlalu banyak sekarang. Tunggu sebentar lalu coba lagi.",
+      "errorServer": "Ada yang salah di sisi kami. Coba lagi."
+    },
+    "trust": {
+      "noWatermark": "Tanpa watermark",
+      "hd": "Kualitas HD",
+      "free": "Gratis sepenuhnya",
+      "private": "Tidak ada yang disimpan di sisi kami"
+    }
+  },
+  "features": {
+    "eyebrow": "Kenapa banyak yang pakai",
+    "title": "Dibuat sesuai cara kamu pakai TikTok",
+    "subtitle": "Tiga hal yang penting saat menyimpan video. Ketiganya kami urus.",
+    "items": [
+      {
+        "title": "Video bersih tanpa watermark",
+        "body": "Kamu dapat tampilan asli tanpa logo TikTok menutupi. Cocok buat repost atau simpan pribadi."
+      },
+      {
+        "title": "Cepat di semua perangkat",
+        "body": "Halaman ringan, kolom input sekali tap, dan file masuk ke folder unduhan dalam beberapa detik."
+      },
+      {
+        "title": "Audio saja kalau kamu mau",
+        "body": "Ambil suaranya saja lalu simpan sebagai MP3. Pas buat sound yang mau kamu remix."
+      }
+    ]
+  },
+  "how": {
+    "eyebrow": "Cara pakainya",
+    "title": "Tiga langkah, tidak ribet",
+    "steps": [
+      {
+        "title": "Salin link TikTok",
+        "body": "Buka aplikasi TikTok atau tiktok.com, tap Bagikan di video, lalu Salin link."
+      },
+      {
+        "title": "Tempel di atas",
+        "body": "Taruh link di kolom paling atas. Kami cek dulu apakah itu URL TikTok yang sah."
+      },
+      {
+        "title": "Simpan videonya",
+        "body": "Pilih video HD atau audio MP3 lalu simpan filenya. Cuma itu saja."
+      }
+    ]
+  },
+  "result": {
+    "durationLabel": "Durasi",
+    "seconds": "dtk",
+    "byAuthor": "oleh",
+    "photoCount": "{count} foto",
+    "downloadHd": "Unduh HD",
+    "downloadStandard": "Unduh video",
+    "downloadAudio": "Simpan audio (MP3)",
+    "downloadPhoto": "Simpan foto",
+    "downloadAll": "Unduh semua foto",
+    "preparingZip": "Menyiapkan paket foto",
+    "saving": "Menyimpan",
+    "newSearch": "Unduh video lain"
+  },
+  "footer": {
+    "tagline": "Dibuat untuk kreator dan yang suka menyimpan diam-diam.",
+    "rights": "Hak cipta dilindungi.",
+    "disclaimer": "Tidak berafiliasi dengan TikTok. Hormati kreator dan unduh hanya video yang kamu berhak gunakan."
+  },
+  "variants": {
+    "mp3": {
+      "metaTitle": "Pengunduh MP3 TikTok — Simpan audio dari video TikTok",
+      "metaDescription": "Ubah video TikTok apa saja menjadi MP3 dalam hitungan detik. Tempel link, dapatkan audio. Tanpa watermark, tanpa app, tanpa daftar.",
+      "ogTitle": "Pengunduh MP3 TikTok",
+      "ogDescription": "Konverter TikTok ke MP3. Tempel link, ambil audio.",
+      "h1": "Unduh audio TikTok jadi MP3",
+      "subtitle": "Ambil suara dari TikTok mana saja dan simpan sebagai MP3 bersih. Cocok untuk lagu, voiceover, dan suara orisinal."
+    },
+    "photos": {
+      "metaTitle": "Pengunduh foto TikTok — Gambar kualitas asli",
+      "metaDescription": "Simpan foto dari postingan gambar TikTok dalam kualitas asli. Satu foto, beberapa, atau semuanya sekaligus.",
+      "ogTitle": "Pengunduh foto TikTok",
+      "ogDescription": "Simpan foto TikTok dalam kualitas asli.",
+      "h1": "Unduh foto TikTok dalam kualitas asli",
+      "subtitle": "Dapatkan foto asli dari postingan gambar TikTok. Simpan satu, beberapa, atau semuanya sekaligus."
+    },
+    "carousel": {
+      "metaTitle": "Pengunduh carousel TikTok — Semua foto dalam satu zip",
+      "metaDescription": "Unduh semua foto dari carousel TikTok dalam satu file zip. Tanpa app, tanpa daftar.",
+      "ogTitle": "Pengunduh carousel TikTok",
+      "ogDescription": "Simpan carousel TikTok sebagai zip. Kualitas asli, satu klik.",
+      "h1": "Unduh carousel TikTok lengkap",
+      "subtitle": "Tempel link carousel TikTok dan dapatkan semua foto dalam satu file zip. Audionya juga."
+    }
+  },
+  "tools": {
+    "sectionLabel": "Alat TikTok lainnya",
+    "home": "Pengunduh video",
+    "mp3": "Pengunduh MP3",
+    "photos": "Pengunduh foto",
+    "carousel": "Pengunduh carousel"
+  },
+  "faq": {
+    "home": {
+      "sectionTitle": "Pertanyaan umum",
+      "items": [
+        { "question": "Bagaimana cara mengunduh video TikTok?", "answer": "Buka aplikasi TikTok atau tiktok.com, tap Bagikan di video, lalu Salin link. Tempel link di kolom atas dan pilih HD atau kualitas standar." },
+        { "question": "Apakah video yang disimpan ada watermark?", "answer": "Tidak. Kami berikan tampilan asli tanpa logo TikTok menutupi, siap dipost ulang atau disimpan." },
+        { "question": "Apakah gratis?", "answer": "Ya. Semua di sini gratis. Tanpa daftar, tanpa aplikasi, tanpa kartu kredit." },
+        { "question": "Kualitas seperti apa yang saya dapat?", "answer": "HD jika aslinya diunggah HD, kalau tidak kami ambil kualitas tertinggi yang disimpan TikTok untuk post itu." },
+        { "question": "Apakah jalan di iPhone dan Android?", "answer": "Ya. Halaman ini dirancang mobile-first. Tempel dan simpan langsung dari browser di HP." }
+      ]
+    },
+    "mp3": {
+      "sectionTitle": "Pertanyaan tentang MP3 TikTok",
+      "items": [
+        { "question": "Bagaimana cara menyimpan audio TikTok jadi MP3?", "answer": "Tempel link video TikTok di atas, lalu cari Simpan audio (MP3) di kartu hasil. Audionya terunduh sebagai .mp3." },
+        { "question": "Apakah MP3 ada watermark atau suara tambahan?", "answer": "Tidak. MP3 adalah suara asli yang bersih dari video, tanpa lapisan apa pun." },
+        { "question": "Bisa ambil musik dari TikTok mana saja?", "answer": "Bisa, asal postnya publik. Video biasa maupun post slideshow membawa audio aslinya." },
+        { "question": "Bagaimana kualitas MP3 nya?", "answer": "Kami pakai audio kualitas tertinggi yang disajikan TikTok. Kebanyakan file keluar di sekitar 128 kbps." },
+        { "question": "Perlu instal sesuatu?", "answer": "Tidak. Semua jalan di browser. Tempel, simpan, selesai." }
+      ]
+    },
+    "photos": {
+      "sectionTitle": "Pertanyaan tentang foto TikTok",
+      "items": [
+        { "question": "Bagaimana cara menyimpan foto TikTok?", "answer": "Tempel link post foto TikTok. Setiap gambar di kartu hasil punya tombol Simpan sendiri." },
+        { "question": "Apakah fotonya resolusi penuh?", "answer": "Ya. Kami serve gambar ukuran asli yang dihost TikTok, tanpa kompresi dari kami." },
+        { "question": "Bisa simpan semua foto sekaligus?", "answer": "Bisa. Tap Unduh semua foto dan kami akan paketkan semua gambar dalam satu zip." },
+        { "question": "Audio post foto ikut tersimpan?", "answer": "Audio muncul sebagai tombol MP3 terpisah di atas grid, jadi bisa kamu simpan terpisah." },
+        { "question": "Apakah jalan di iPhone dan Android?", "answer": "Ya. Tempel dan simpan langsung dari browser HP." }
+      ]
+    },
+    "carousel": {
+      "sectionTitle": "Pertanyaan tentang carousel TikTok",
+      "items": [
+        { "question": "Apa itu carousel TikTok?", "answer": "Carousel — kadang disebut photo post atau slideshow — adalah post TikTok yang berisi beberapa foto, bukan satu video." },
+        { "question": "Bagaimana cara mengunduh carousel TikTok?", "answer": "Tempel link postingan di atas. Kami tampilkan setiap foto dalam grid dan menyediakan tombol Unduh semua untuk membungkus semuanya." },
+        { "question": "Apakah saya benar-benar dapat semua foto?", "answer": "Ya. Zipnya berisi setiap gambar dalam urutan asli dengan kualitas penuh." },
+        { "question": "Audionya ikut di dalam zip?", "answer": "Tidak. Audio kami sajikan sebagai tombol MP3 terpisah supaya bisa disimpan tanpa membongkar zip." },
+        { "question": "Kenapa carousel kadang disebut slideshow?", "answer": "Aplikasi yang berbeda memakai nama berbeda. Datanya sama: post TikTok yang berisi beberapa foto." }
+      ]
+    }
+  }
+}

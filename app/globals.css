@@ -1,26 +1,104 @@
 @import "tailwindcss";
 
+/*
+ * Palette, radius, shadow, and decorative-gradient values are all defined
+ * here as CSS variables. Components must reference them via Tailwind
+ * utilities (bg-primary, text-foreground, border-border, shadow-card) so
+ * the entire site is re-skinnable from this file alone.
+ *
+ * Blue theme: deep blue (≈ Tailwind blue-700) for primary actions, pale
+ * blue (≈ blue-100) for soft chips and hover surfaces. White page and
+ * white cards keep the layout calm; cards rely on border + shadow for
+ * separation against the white surface.
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Surfaces */
+  --background: 255 255 255;
+  --foreground: 17 24 39;
+
+  --card: 255 255 255;
+  --card-foreground: 17 24 39;
+
+  /* Soft pale blue used for chips, hover surfaces, and the primary-soft
+     icon tile inside cards. Kept as a tint, not a section background. */
+  --muted: 219 234 254;
+  --muted-foreground: 100 116 139;
+
+  /* Lines, inputs, focus ring — neutral cool gray so the card edges
+     register on a white page and pair with the blue brand. */
+  --border: 226 232 240;
+  --input: 226 232 240;
+  --ring: 29 78 216;
+
+  /* Brand */
+  --primary: 29 78 216;
+  --primary-foreground: 255 255 255;
+  --primary-soft: 219 234 254;
+
+  --accent: 219 234 254;
+  --accent-foreground: 17 24 39;
+
+  /* Status: warm amber for "waiting" copy, rust red for hard errors. */
+  --warning: 224 162 80;
+  --warning-foreground: 56 36 12;
+  --danger: 184 64 64;
+  --danger-foreground: 255 255 255;
+
+  /* Shape */
+  --radius: 0.875rem;
+
+  /* Two-stop card shadow. White-on-white means the shadow does most of
+     the visual lifting; cool slate tint matches the blue-tilted palette. */
+  --shadow-card:
+    0 1px 2px rgb(15 23 42 / 0.05),
+    0 12px 28px -16px rgb(15 23 42 / 0.14);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: rgb(var(--background));
+  --color-foreground: rgb(var(--foreground));
+  --color-card: rgb(var(--card));
+  --color-card-foreground: rgb(var(--card-foreground));
+  --color-muted: rgb(var(--muted));
+  --color-muted-foreground: rgb(var(--muted-foreground));
+  --color-border: rgb(var(--border));
+  --color-input: rgb(var(--input));
+  --color-ring: rgb(var(--ring));
+  --color-primary: rgb(var(--primary));
+  --color-primary-foreground: rgb(var(--primary-foreground));
+  --color-primary-soft: rgb(var(--primary-soft));
+  --color-accent: rgb(var(--accent));
+  --color-accent-foreground: rgb(var(--accent-foreground));
+  --color-warning: rgb(var(--warning));
+  --color-warning-foreground: rgb(var(--warning-foreground));
+  --color-danger: rgb(var(--danger));
+  --color-danger-foreground: rgb(var(--danger-foreground));
+
+  --font-sans: var(--font-jakarta);
+  --font-display: var(--font-jakarta);
+
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 0.25rem);
+  --radius-sm: calc(var(--radius) - 0.5rem);
+
+  --shadow-card: var(--shadow-card);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  /* Light-mode only by request: keep native form controls and the
+     scrollbar light even on a system that prefers dark. */
+  color-scheme: light;
 }
 
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(var(--background));
+  color: rgb(var(--foreground));
+  font-family: var(--font-jakarta), system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-feature-settings: "ss01", "cv11";
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--ring));
+  outline-offset: 2px;
 }
