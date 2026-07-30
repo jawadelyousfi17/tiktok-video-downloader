@@ -132,42 +132,648 @@
     "home": {
       "sectionTitle": "Häufige Fragen",
       "items": [
-        { "question": "Wie lade ich ein TikTok Video herunter?", "answer": "Öffne die TikTok App oder tiktok.com, tippe auf Teilen am Video und auf Link kopieren. Füge den Link oben ein und wähle HD oder Standard." },
-        { "question": "Hat das gespeicherte Video ein Wasserzeichen?", "answer": "Nein. Du bekommst das Originalbild ohne TikTok Logo darüber, fertig zum Reposten oder Aufbewahren." },
-        { "question": "Ist das kostenlos?", "answer": "Ja. Alles hier ist kostenlos. Keine Anmeldung, keine App, keine Kreditkarte." },
-        { "question": "Welche Qualität bekomme ich?", "answer": "HD, wenn das Original in HD hochgeladen wurde, sonst die höchste Qualität, die TikTok für den Post gespeichert hat." },
-        { "question": "Funktioniert das auf iPhone und Android?", "answer": "Ja. Die Seite ist mobile-first. Einfügen und Speichern gehen direkt im Browser deines Handys." }
+        {
+          "question": "Wie lade ich ein TikTok Video herunter?",
+          "answer": "Öffne die TikTok App oder tiktok.com, tippe auf Teilen am Video und auf Link kopieren. Füge den Link oben ein und wähle HD oder Standard."
+        },
+        {
+          "question": "Hat das gespeicherte Video ein Wasserzeichen?",
+          "answer": "Nein. Du bekommst das Originalbild ohne TikTok Logo darüber, fertig zum Reposten oder Aufbewahren."
+        },
+        {
+          "question": "Ist das kostenlos?",
+          "answer": "Ja. Alles hier ist kostenlos. Keine Anmeldung, keine App, keine Kreditkarte."
+        },
+        {
+          "question": "Welche Qualität bekomme ich?",
+          "answer": "HD, wenn das Original in HD hochgeladen wurde, sonst die höchste Qualität, die TikTok für den Post gespeichert hat."
+        },
+        {
+          "question": "Funktioniert das auf iPhone und Android?",
+          "answer": "Ja. Die Seite ist mobile-first. Einfügen und Speichern gehen direkt im Browser deines Handys."
+        },
+        {
+          "question": "Kann ich private Videos oder Videos nur für Freunde laden?",
+          "answer": "Nein. Wir kommen nur an öffentliche Beiträge. Ist das Konto privat oder das Video auf Freunde beschränkt, gibt es für uns nichts abzurufen."
+        },
+        {
+          "question": "Speichert ihr die Videos, die ich herunterlade?",
+          "answer": "Nein. Der Link dient nur dazu, den Beitrag zu finden, und die Datei läuft direkt zu deinem Browser durch. Wir halten die Beitragsdaten kurz im Cache, damit wiederholte Links schneller sind, mehr nicht."
+        },
+        {
+          "question": "Ist das Herunterladen von TikTok-Videos legal?",
+          "answer": "Ein Video für dich selbst offline zu speichern ist in der Regel unproblematisch. Fremde Arbeit erneut zu veröffentlichen, damit Geld zu verdienen oder sie als eigene auszugeben, ist es nicht. Die Rechte bleiben beim Ersteller, egal wie du an die Datei gekommen bist."
+        },
+        {
+          "question": "Warum ist mein Download fehlgeschlagen?",
+          "answer": "Meist liegt es an einem privaten Konto, einem gelöschten Beitrag, einer Regionssperre oder einem falsch kopierten Link. Öffne die Adresse erst im Browser: Wenn TikTok sie dir nicht zeigt, können wir sie auch nicht holen."
+        },
+        {
+          "question": "Gibt es ein Limit, wie viele Videos ich speichern kann?",
+          "answer": "Kein Tageslimit. Wir begrenzen aber, wie schnell Anfragen von einer Verbindung eintreffen dürfen. Wer Dutzende Links hintereinander einfügt, wird also eventuell um eine Minute Pause gebeten."
+        },
+        {
+          "question": "Kann ich ein Video in 4K herunterladen?",
+          "answer": "Nur wenn der Ersteller es so hochgeladen hat, was selten vorkommt. TikTok rechnet die meisten Uploads auf 1080p oder weniger herunter, und wir können keine Qualität liefern, die auf ihren Servern nicht existiert."
+        }
       ]
     },
     "mp3": {
       "sectionTitle": "Fragen zu TikTok MP3",
       "items": [
-        { "question": "Wie speichere ich TikTok Ton als MP3?", "answer": "Füge oben einen TikTok Link ein, dann tippe in der Ergebniskarte auf Audio speichern (MP3). Der Ton kommt als .mp3 Datei." },
-        { "question": "Hat die MP3 ein Wasserzeichen oder eine Stimme?", "answer": "Nein. Die MP3 ist der saubere Originalsound aus dem Video, ohne Aufdruck." },
-        { "question": "Kann ich Musik aus jedem TikTok ziehen?", "answer": "Ja, solange der Post öffentlich ist. Auch Slideshow Posts enthalten den Originalton." },
-        { "question": "Wie hoch ist die MP3 Qualität?", "answer": "Wir nehmen die höchste Audioqualität, die TikTok ausliefert. Meist landen die Dateien bei rund 128 kbps." },
-        { "question": "Muss ich etwas installieren?", "answer": "Nein. Alles läuft im Browser. Einfügen, speichern, fertig." }
+        {
+          "question": "Wie speichere ich TikTok Ton als MP3?",
+          "answer": "Füge oben einen TikTok Link ein, dann tippe in der Ergebniskarte auf Audio speichern (MP3). Der Ton kommt als .mp3 Datei."
+        },
+        {
+          "question": "Hat die MP3 ein Wasserzeichen oder eine Stimme?",
+          "answer": "Nein. Die MP3 ist der saubere Originalsound aus dem Video, ohne Aufdruck."
+        },
+        {
+          "question": "Kann ich Musik aus jedem TikTok ziehen?",
+          "answer": "Ja, solange der Post öffentlich ist. Auch Slideshow Posts enthalten den Originalton."
+        },
+        {
+          "question": "Wie hoch ist die MP3 Qualität?",
+          "answer": "Wir nehmen die höchste Audioqualität, die TikTok ausliefert. Meist landen die Dateien bei rund 128 kbps."
+        },
+        {
+          "question": "Muss ich etwas installieren?",
+          "answer": "Nein. Alles läuft im Browser. Einfügen, speichern, fertig."
+        },
+        {
+          "question": "Ist die Audiodatei der ganze Song oder nur der Ausschnitt aus dem Video?",
+          "answer": "Du bekommst genau das, was im Beitrag steckt. TikTok-Sounds sind meist 15 bis 60 Sekunden lang, entsprechend lang ist auch die MP3 und nicht der komplette kommerzielle Track."
+        },
+        {
+          "question": "Darf ich einen heruntergeladenen Sound in meinem eigenen TikTok nutzen?",
+          "answer": "Technisch ja, nötig ist es aber selten. Tippt man in TikTok auf den Sound-Namen, wird er nativ mit Quellenangabe eingebunden, was der Algorithmus deutlich besser bewertet als eine neu hochgeladene Audiodatei."
+        },
+        {
+          "question": "Bleiben Interpret und Titel in der MP3 erhalten?",
+          "answer": "Die Datei bekommt einen Namen aus dem Beitragstitel. TikTok liefert keine sauberen ID3-Tags mit, du willst Interpret und Album im Player also vielleicht selbst nachtragen."
+        },
+        {
+          "question": "Warum ist die Audioqualität nicht höher?",
+          "answer": "Wir geben den Stream weiter, den TikTok hostet, und etwas Besseres existiert dort nicht. Jedes Tool, das 320 kbps aus einem TikTok verspricht, rechnet eine 128-kbps-Quelle hoch: mehr Dateigröße, kein echtes Detail."
+        },
+        {
+          "question": "Kann ich ein TikTok stattdessen in WAV oder M4A umwandeln?",
+          "answer": "Über diese Seite nicht. Wir geben die MP3 so zurück, wie TikTok sie speichert. Die Umwandlung danach ist in jedem Audioeditor oder kostenlosen Konverter ein einziger Schritt."
+        },
+        {
+          "question": "Funktioniert das auch bei Foto-Beiträgen?",
+          "answer": "Ja. Foto-Karussells haben genau wie Videos eine Tonspur, und der Button zum Speichern erscheint über dem Fotoraster."
+        }
       ]
     },
     "photos": {
       "sectionTitle": "Fragen zu TikTok Fotos",
       "items": [
-        { "question": "Wie speichere ich TikTok Fotos?", "answer": "Füge den Link eines TikTok Bildposts ein. Jedes Foto in der Ergebniskarte hat einen eigenen Speichern Button." },
-        { "question": "Sind die Fotos in voller Auflösung?", "answer": "Ja. Du bekommst das Originalbild von TikTok in voller Größe, ohne Komprimierung von uns." },
-        { "question": "Kann ich alle Fotos auf einmal speichern?", "answer": "Ja. Tippe auf Alle Fotos herunterladen und wir packen jedes Bild in eine einzelne ZIP." },
-        { "question": "Ist der Ton des Bildposts dabei?", "answer": "Den Ton gibt es als separaten MP3 Button direkt über dem Foto-Raster, damit du ihn extra speichern kannst." },
-        { "question": "Funktioniert das auf iPhone und Android?", "answer": "Ja. Einfügen und Speichern gehen direkt im Browser deines Handys." }
+        {
+          "question": "Wie speichere ich TikTok Fotos?",
+          "answer": "Füge den Link eines TikTok Bildposts ein. Jedes Foto in der Ergebniskarte hat einen eigenen Speichern Button."
+        },
+        {
+          "question": "Sind die Fotos in voller Auflösung?",
+          "answer": "Ja. Du bekommst das Originalbild von TikTok in voller Größe, ohne Komprimierung von uns."
+        },
+        {
+          "question": "Kann ich alle Fotos auf einmal speichern?",
+          "answer": "Ja. Tippe auf Alle Fotos herunterladen und wir packen jedes Bild in eine einzelne ZIP."
+        },
+        {
+          "question": "Ist der Ton des Bildposts dabei?",
+          "answer": "Den Ton gibt es als separaten MP3 Button direkt über dem Foto-Raster, damit du ihn extra speichern kannst."
+        },
+        {
+          "question": "Funktioniert das auf iPhone und Android?",
+          "answer": "Ja. Einfügen und Speichern gehen direkt im Browser deines Handys."
+        },
+        {
+          "question": "Warum nicht einfach einen Screenshot machen?",
+          "answer": "Ein Screenshot entsteht in der Auflösung deines Bildschirms und nimmt die Oberfläche mit. Die Originaldatei ist meist zwei- bis dreimal so groß in Pixeln und hat keine Buttons oder Texte darüber."
+        },
+        {
+          "question": "Erfährt der Ersteller, dass ich ein Foto gespeichert habe?",
+          "answer": "Nein. TikTok benachrichtigt niemanden über Downloads, und die Anfrage berührt dein Konto nie, weil du hier gar nicht angemeldet bist."
+        },
+        {
+          "question": "Kann ich Fotos aus einem privaten Konto speichern?",
+          "answer": "Nein. Erreichbar sind nur öffentliche Beiträge. Wenn du den Link in einem abgemeldeten Browser nicht öffnen kannst, können wir es auch nicht."
+        },
+        {
+          "question": "Wie viele Fotos kann ein Beitrag enthalten?",
+          "answer": "TikTok erlaubt derzeit bis zu 35 Bilder pro Beitrag. Das ZIP kommt mit dem kompletten Satz zurecht, wie viele es auch sind."
+        },
+        {
+          "question": "Das ZIP dauert lange. Hängt es fest?",
+          "answer": "Für das Paket müssen erst alle Bilder geladen werden, ein Satz mit 30 Fotos braucht also länger als einer mit 3. Gib ihm ein paar Sekunden, bevor du es erneut versuchst."
+        },
+        {
+          "question": "Darf ich diese Fotos kommerziell nutzen?",
+          "answer": "Nicht ohne Erlaubnis. Am Eigentum ändert ein Download nichts, die Rechte bleiben bei dem, der die Bilder gemacht hat."
+        }
       ]
     },
     "carousel": {
       "sectionTitle": "Fragen zu TikTok Karussells",
       "items": [
-        { "question": "Was ist ein TikTok Karussell?", "answer": "Ein Karussell — manchmal auch Foto Post oder Slideshow genannt — ist ein TikTok Post aus mehreren Fotos statt aus einem Video." },
-        { "question": "Wie lade ich ein TikTok Karussell herunter?", "answer": "Füge den Post Link oben ein. Wir zeigen jedes Foto in einem Raster und bieten einen Alle herunterladen Button für das ganze Set." },
-        { "question": "Bekomme ich wirklich alle Fotos?", "answer": "Ja. Die ZIP enthält jedes Bild in der Originalreihenfolge und in voller Qualität." },
-        { "question": "Ist der Ton in der ZIP enthalten?", "answer": "Nein. Den Ton geben wir als separaten MP3 Button daneben aus, damit du ihn ohne ZIP entpacken speichern kannst." },
-        { "question": "Warum heißen Karussells manchmal Slideshow?", "answer": "Verschiedene Apps nutzen verschiedene Namen. Die Daten sind dieselben: ein TikTok Post aus mehreren Fotos." }
+        {
+          "question": "Was ist ein TikTok Karussell?",
+          "answer": "Ein Karussell — manchmal auch Foto Post oder Slideshow genannt — ist ein TikTok Post aus mehreren Fotos statt aus einem Video."
+        },
+        {
+          "question": "Wie lade ich ein TikTok Karussell herunter?",
+          "answer": "Füge den Post Link oben ein. Wir zeigen jedes Foto in einem Raster und bieten einen Alle herunterladen Button für das ganze Set."
+        },
+        {
+          "question": "Bekomme ich wirklich alle Fotos?",
+          "answer": "Ja. Die ZIP enthält jedes Bild in der Originalreihenfolge und in voller Qualität."
+        },
+        {
+          "question": "Ist der Ton in der ZIP enthalten?",
+          "answer": "Nein. Den Ton geben wir als separaten MP3 Button daneben aus, damit du ihn ohne ZIP entpacken speichern kannst."
+        },
+        {
+          "question": "Warum heißen Karussells manchmal Slideshow?",
+          "answer": "Verschiedene Apps nutzen verschiedene Namen. Die Daten sind dieselben: ein TikTok Post aus mehreren Fotos."
+        },
+        {
+          "question": "Wie viele Bilder kann ich auf einmal laden?",
+          "answer": "So viele, wie der Beitrag enthält. TikTok begrenzt Karussells auf 35 Bilder, und das ZIP schafft den kompletten Satz."
+        },
+        {
+          "question": "Warum dauert das länger als ein Video?",
+          "answer": "Wir holen alle Bilder, bevor das ZIP gebaut werden kann, die Wartezeit wächst also mit der Anzahl der Fotos. Große Sätze brauchen ein paar Sekunden mehr als ein einzelnes Video."
+        },
+        {
+          "question": "Kann ich nur ein Foto aus dem Karussell laden?",
+          "answer": "Ja. Jedes Bild im Raster hat einen eigenen Speichern-Button, du kannst also eines mitnehmen, ohne das ZIP anzufassen."
+        },
+        {
+          "question": "Behalten die Dateien ihre ursprüngliche Reihenfolge?",
+          "answer": "Ja. Jede Datei ist nach ihrer Position im Beitrag nummeriert, sequenzielle Inhalte lassen sich nach dem Entpacken also weiterhin richtig lesen."
+        },
+        {
+          "question": "Kann ich ein Karussell aus einem privaten Konto laden?",
+          "answer": "Nein. Abrufbar sind nur öffentliche Beiträge. Öffnet sich der Link in einem abgemeldeten Browser nicht, funktioniert er hier auch nicht."
+        },
+        {
+          "question": "Enthält das ZIP die Bildunterschrift oder Hashtags?",
+          "answer": "Nein. Im ZIP sind nur die Bilder. Wenn du den Text brauchst, kopiere ihn vor dem Download aus dem Beitrag."
+        }
       ]
+    }
+  },
+  "content": {
+    "home": {
+      "intro": {
+        "title": "Was dieser TikTok-Downloader wirklich macht",
+        "paragraphs": [
+          "TikTok bietet keinen sauberen Weg, ein Video zu speichern. Der Download-Button in der App brennt ein Wasserzeichen ins Bild und stempelt den Namen des Erstellers in die Ecke, womit der Clip außerhalb von TikTok kaum noch zu gebrauchen ist. Videos, die der Ersteller als nicht herunterladbar markiert hat, bieten nicht einmal das. Diese Seite schließt die Lücke: Füge einen öffentlichen TikTok-Link ein und du bekommst die originale MP4 zurück, dieselbe Datei, die TikTok in deinen Feed streamt, ohne irgendetwas darüber.",
+          "Alles läuft über deinen Browser. Keine App zu installieren, kein Konto anzulegen, keine Warteschlange. Wenn du einen Link einfügst, lesen wir die öffentlichen Daten des Beitrags, holen die direkte Video-URL und übergeben sie deinem Browser als ganz normalen Download. Vom Video bleibt anschließend nichts auf unseren Servern, und wir sehen nie etwas, das du nicht selbst eingefügt hast.",
+          "Die Qualität hängt davon ab, was der Ersteller hochgeladen hat. Die meisten TikToks entstehen in 1080p, und wir liefern diese Auflösung, wenn es sie gibt, sonst die beste Version, die TikTok zum Beitrag aufbewahrt hat. Neben dem Video bekommst du die Tonspur separat als MP3, praktisch, wenn dir der Ton wichtiger ist als das Bild.",
+          "Es funktioniert mit normalen Videos, Foto-Beiträgen und Slideshows. Zeigt der Link auf ein Bilder-Karussell statt auf ein Video, wechselt das Ergebnis zu einem Fotoraster mit einem Speichern-Button unter jedem Bild und einem ZIP des ganzen Satzes."
+        ]
+      },
+      "specs": {
+        "title": "Was du für jeden Link bekommst",
+        "subtitle": "Jeder Download läuft durch denselben Ablauf, das Ergebnis ist also berechenbar, egal welchen Beitrag du einfügst.",
+        "columns": {
+          "feature": "Was",
+          "value": "Du bekommst",
+          "note": "Details"
+        },
+        "rows": [
+          {
+            "feature": "Videoqualität",
+            "value": "Bis zu 1080p HD",
+            "note": "Wir liefern die höchste Auflösung, die TikTok zum Beitrag gespeichert hat. Ältere Uploads enden teils bei 720p."
+          },
+          {
+            "feature": "Wasserzeichen",
+            "value": "Entfernt",
+            "note": "Die Datei ist das Originalbild, ohne TikTok-Logo und ohne Nutzernamen darüber."
+          },
+          {
+            "feature": "Videoformat",
+            "value": "MP4 (H.264)",
+            "note": "Läuft nativ unter iOS, Android, Windows, macOS und in jedem gängigen Schnittprogramm."
+          },
+          {
+            "feature": "Audio",
+            "value": "MP3, etwa 128 kbps",
+            "note": "Als eigene Datei gespeichert, damit du den Ton ohne das Bildmaterial mitnehmen kannst."
+          },
+          {
+            "feature": "Foto-Beiträge",
+            "value": "JPG in voller Größe",
+            "note": "Originalmaße, ohne erneute Komprimierung. Einzeln oder als ein ZIP."
+          },
+          {
+            "feature": "Preis und Limits",
+            "value": "Kostenlos, ohne Konto",
+            "note": "Kein Tageslimit bei normaler Nutzung. Wir bremsen nur Stöße, die automatisiert wirken."
+          }
+        ]
+      },
+      "guides": {
+        "title": "So lädst du ein TikTok auf deinem Gerät",
+        "subtitle": "Die Schritte sind fast überall gleich. Der eigentliche Unterschied liegt darin, wo die Datei danach landet.",
+        "platforms": [
+          {
+            "name": "iPhone und iPad",
+            "steps": [
+              "Öffne die TikTok-App, suche das Video und tippe rechts auf den Teilen-Pfeil.",
+              "Tippe auf Link kopieren. Bist du stattdessen in Safari auf tiktok.com, kopiere die Adresse aus der URL-Leiste.",
+              "Komm zurück auf diese Seite, tippe ins Eingabefeld und wähle Einsetzen aus dem Menü.",
+              "Tippe auf Download. Safari legt die Datei in Dateien ab, von dort kannst du sie nach Fotos verschieben."
+            ]
+          },
+          {
+            "name": "Android",
+            "steps": [
+              "Tippe in der TikTok-App auf Teilen und wähle Link kopieren.",
+              "Wechsle zu Chrome, öffne diese Seite und halte das Eingabefeld gedrückt, um einzufügen.",
+              "Tippe auf Download und bestätige das Speichern, falls Chrome fragt.",
+              "Das Video landet im Ordner Downloads und taucht binnen einer Minute in der Galerie auf."
+            ]
+          },
+          {
+            "name": "Windows-PC",
+            "steps": [
+              "Öffne tiktok.com in einem beliebigen Browser und klicke das gewünschte Video an.",
+              "Klicke unter dem Video auf Teilen und dann auf Link kopieren. Die URL aus der Adressleiste geht genauso.",
+              "Füge sie oben auf dieser Seite ein und drücke Enter.",
+              "Wähle HD, und die Datei wandert direkt in deinen Downloads-Ordner."
+            ]
+          },
+          {
+            "name": "Mac",
+            "steps": [
+              "Kopiere den Link in der TikTok-App auf dem Handy und schick ihn per AirDrop, oder öffne tiktok.com in Safari.",
+              "Füge den Link oben mit Cmd+V ein.",
+              "Klicke auf Download und wähle die gewünschte Qualität.",
+              "Safari legt die MP4 in Downloads ab, bereit für Final Cut, Premiere oder QuickTime."
+            ]
+          }
+        ]
+      },
+      "useCases": {
+        "title": "Warum Leute TikToks speichern",
+        "subtitle": "Eine Kopie ohne Wasserzeichen ist in all diesen Fällen deutlich mehr wert als eine Bildschirmaufnahme.",
+        "items": [
+          {
+            "title": "Auf anderen Plattformen erneut posten",
+            "body": "Ein Clip mit TikTok-Wasserzeichen wird von Instagram Reels und YouTube Shorts nach unten gereicht, beide stufen erkennbar recycelte Inhalte herab. Eine saubere Datei gibt demselben Video auf jeder Plattform eine faire Chance."
+          },
+          {
+            "title": "Schneiden und remixen",
+            "body": "Wer schneidet, braucht Rohmaterial ohne Logo, das durchs Bild hüpft. Die rohe MP4 zu speichern heißt, schneiden, untertiteln und farbkorrigieren zu können, ohne um eine unlöschbare Einblendung herumzuarbeiten."
+          },
+          {
+            "title": "Eine Kopie offline behalten",
+            "body": "Beiträge verschwinden. Ersteller löschen sie, Konten werden privat, und die Moderation entfernt Dinge ohne Vorwarnung. Wenn dir ein Video wichtig ist, ist eine Kopie auf der eigenen Festplatte die einzige echte Garantie."
+          }
+        ]
+      }
+    },
+    "mp3": {
+      "intro": {
+        "title": "Ein TikTok in eine MP3 verwandeln",
+        "paragraphs": [
+          "TikTok ist heute der Ort, an dem viel Musik entdeckt wird, aber die App lässt dich den Ton nicht behalten. Du kannst ein Video in den Entwürfen sichern oder einen Sound zu den Favoriten legen, und beides funktioniert nur innerhalb von TikTok. Sobald du das Audio als Datei willst, auf deinem Gerät, in einem Player deiner Wahl, ist die App eine Sackgasse.",
+          "Diese Seite zieht die Tonspur aus dem Beitrag und gibt sie dir als MP3 zurück. Das klappt mit dem Originalton, den ein Ersteller aufgenommen hat, mit lizenzierter Musik am Video, mit Voiceovers und mit dem Klangbett unter einer Foto-Slideshow. Was der Beitrag abspielt, bekommst du als Datei.",
+          "Das Extrahieren passiert auf unserer Seite und dauert ein paar Sekunden. Du nimmst weder eine Bildschirmaufnahme noch deine Lautsprecher ab, also gibt es keinen Qualitätsverlust, kein Rauschen im Hintergrund und keinen Benachrichtigungston, der versehentlich in der Spur landet.",
+          "Die Dateien kommen mit rund 128 kbps heraus, das liefert TikTok so. Für Hören, für ein Sample oder als Unterlage unter einem Schnitt reicht das locker. An ein Studio-Master kommt es nicht heran, schlicht weil es eine solche Fassung bei TikTok gar nicht gibt."
+        ]
+      },
+      "specs": {
+        "title": "Wie die MP3-Datei aussieht",
+        "subtitle": "Jeder Audio-Download kommt gleich heraus, egal ob die Quelle ein Video oder ein Foto-Beitrag war.",
+        "columns": {
+          "feature": "Eigenschaft",
+          "value": "Wert",
+          "note": "Was das heißt"
+        },
+        "rows": [
+          {
+            "feature": "Format",
+            "value": "MP3",
+            "note": "Öffnet sich in jedem Player, Handy und Editor ohne Umwandlung."
+          },
+          {
+            "feature": "Bitrate",
+            "value": "Etwa 128 kbps",
+            "note": "Die Qualität, die TikTok speichert. Wir reichen sie unverändert durch, statt neu zu kodieren."
+          },
+          {
+            "feature": "Länge",
+            "value": "Kompletter Track",
+            "note": "Du bekommst das Audio so lang, wie der Beitrag es abspielt, keine gekürzte Vorschau."
+          },
+          {
+            "feature": "Wasserzeichen",
+            "value": "Keines",
+            "note": "Kein eingesprochener Hinweis, kein Piepton, keine Marke über dem Klang."
+          },
+          {
+            "feature": "Passende Beiträge",
+            "value": "Videos und Slideshows",
+            "note": "Foto-Karussells haben ebenfalls eine Tonspur, die genauso heruntergeladen wird."
+          },
+          {
+            "feature": "Preis",
+            "value": "Kostenlos",
+            "note": "Kein Konto, keine Installation, kein Limit bei normaler Nutzung."
+          }
+        ]
+      },
+      "guides": {
+        "title": "So sicherst du TikTok-Audio auf deinem Gerät",
+        "subtitle": "Den Link zu holen läuft überall gleich. Was sich ändert, ist der Ort, an dem die MP3 landet.",
+        "platforms": [
+          {
+            "name": "iPhone und iPad",
+            "steps": [
+              "Tippe im TikTok auf Teilen, dann auf Link kopieren.",
+              "Öffne diese Seite in Safari und füge den Link ins Feld ein.",
+              "Tippe auf Download und suche dann Audio speichern (MP3) in der erscheinenden Karte.",
+              "Die Datei geht nach Dateien. Öffne sie dort oder importiere sie in deine Musik-App."
+            ]
+          },
+          {
+            "name": "Android",
+            "steps": [
+              "Nutze Teilen und dann Link kopieren in der TikTok-App.",
+              "Füge den Link hier in Chrome ein und tippe auf Download.",
+              "Wähle Audio speichern (MP3) in der Ergebniskarte.",
+              "Die MP3 landet in Downloads, und die meisten Player finden sie von allein."
+            ]
+          },
+          {
+            "name": "Windows-PC",
+            "steps": [
+              "Kopiere die Video-URL aus der Adressleiste auf tiktok.com.",
+              "Füge sie oben ins Feld ein und drücke Enter.",
+              "Klicke auf Audio speichern (MP3), sobald das Ergebnis geladen ist.",
+              "Die Datei findest du in Downloads, bereit für jeden Player oder Editor."
+            ]
+          },
+          {
+            "name": "Mac",
+            "steps": [
+              "Öffne das TikTok in Safari oder Chrome und kopiere die URL.",
+              "Füge sie hier mit Cmd+V ein und schicke ab.",
+              "Klicke auf Audio speichern (MP3).",
+              "Zieh die Datei aus Downloads direkt in Musik, Logic oder dein Schnittprogramm."
+            ]
+          }
+        ]
+      },
+      "useCases": {
+        "title": "Was Leute mit TikTok-Audio machen",
+        "subtitle": "Der Ton überlebt oft das Video, aus dem er stammt.",
+        "items": [
+          {
+            "title": "Musik finden, deren Namen du nicht kennst",
+            "body": "Ein Sound bleibt dir im Feed hängen und der Titel steht nirgends. Die MP3 zu speichern heißt, sie durch eine Musikerkennung schicken zu können oder einfach weiterzuhören, bis du herausfindest, was es ist."
+          },
+          {
+            "title": "Einen Sound in eigenen Schnitten nutzen",
+            "body": "Trend-Audio treibt die Reichweite. Die Spur als Datei zu haben, lässt dich dein eigenes Material in einem richtigen Programm darauf schneiden, statt mit TikToks eingebauter Timeline zu ringen."
+          },
+          {
+            "title": "Sprachaufnahmen und Interviews behalten",
+            "body": "Nicht jedes TikTok ist Musik. Interviews, Erzählungen und Vorträge lohnen sich als Audio, das du nachhören kannst, ohne Daten fürs Video zu verbrauchen."
+          }
+        ]
+      }
+    },
+    "photos": {
+      "intro": {
+        "title": "Fotos aus TikTok-Beiträgen sichern",
+        "paragraphs": [
+          "Nicht alles auf TikTok ist Video. Foto-Beiträge sind still und leise zu einem großen Teil des Feeds geworden, und sie verhalten sich anders als Clips: Standbilder mit einem Klangbett, durchgewischt statt abgespielt. TikTok bietet dafür überhaupt keinen Speichern-Button, der übliche Behelf ist also der Screenshot.",
+          "Ein Screenshot kostet dich viel. Er entsteht in der Auflösung deines Bildschirms statt in der des Bildes, brennt die Oberfläche mit ein und schneidet weg, was unter dem Text oder der Seitenleiste lag. Was du behältst, ist ein Bild von einem Bild.",
+          "Diese Seite gibt dir stattdessen die echten Bilddateien. Füge den Link eines Foto-Beitrags ein und du bekommst jedes Bild des Satzes in den Maßen, die der Ersteller hochgeladen hat, ohne Bedienelemente, ohne zweite Komprimierung von uns und ohne abgeschnittene Ränder.",
+          "Jedes Foto hat einen eigenen Speichern-Button, du kannst also nur das eine mitnehmen, das du wolltest. Willst du alles, packt ein Button jedes Bild in der Originalreihenfolge in ein ZIP. Die Tonspur gibt es separat als MP3."
+        ]
+      },
+      "specs": {
+        "title": "Was du aus einem Foto-Beitrag bekommst",
+        "subtitle": "Jedes Mal dasselbe Ergebnis, ob der Beitrag zwei Bilder hat oder vierzig.",
+        "columns": {
+          "feature": "Eigenschaft",
+          "value": "Wert",
+          "note": "Was das heißt"
+        },
+        "rows": [
+          {
+            "feature": "Bildqualität",
+            "value": "Originalauflösung",
+            "note": "Die Datei, die TikTok hostet, keine bildschirmgroße Kopie. Meist deutlich über dem, was ein Screenshot einfängt."
+          },
+          {
+            "feature": "Format",
+            "value": "JPG",
+            "note": "Standardformat, das sich überall öffnet und in jedes Programm importieren lässt."
+          },
+          {
+            "feature": "Komprimierung",
+            "value": "Keine von uns",
+            "note": "Wir reichen die Datei unverändert durch, ohne zweiten Komprimierungsdurchgang über TikToks."
+          },
+          {
+            "feature": "Bedienelemente",
+            "value": "Keine",
+            "note": "Keine Bildtexte, Buttons, Nutzernamen oder Seitenleisten im Bild."
+          },
+          {
+            "feature": "Sammel-Download",
+            "value": "ZIP des ganzen Satzes",
+            "note": "Alle Bilder in der Originalreihenfolge, in einer Datei."
+          },
+          {
+            "feature": "Audio",
+            "value": "Separate MP3",
+            "note": "Bewusst außerhalb des ZIPs, damit du den Ton holen kannst, ohne etwas zu entpacken."
+          }
+        ]
+      },
+      "guides": {
+        "title": "So sicherst du TikTok-Fotos auf deinem Gerät",
+        "subtitle": "Kopiere den Beitragslink genauso wie bei einem Video. Der Rest ist ein Tippen pro Bild.",
+        "platforms": [
+          {
+            "name": "iPhone und iPad",
+            "steps": [
+              "Öffne den Foto-Beitrag in TikTok und tippe auf den Teilen-Pfeil.",
+              "Wähle Link kopieren.",
+              "Füge ihn ins Feld auf dieser Seite ein und tippe auf Download.",
+              "Tippe unter einem beliebigen Bild auf Foto speichern. Safari legt es in Dateien, von dort kannst du es zu Fotos hinzufügen."
+            ]
+          },
+          {
+            "name": "Android",
+            "steps": [
+              "Tippe beim Foto-Beitrag auf Teilen, dann auf Link kopieren.",
+              "Öffne diese Seite in Chrome und füge den Link ein.",
+              "Tippe bei den gewünschten Bildern auf Foto speichern, oder auf Alle Fotos herunterladen für den ganzen Satz.",
+              "Die Dateien landen in Downloads und erscheinen kurz darauf in der Galerie."
+            ]
+          },
+          {
+            "name": "Windows-PC",
+            "steps": [
+              "Öffne den Foto-Beitrag auf tiktok.com und kopiere die URL aus der Adressleiste.",
+              "Füge sie oben ins Feld ein und drücke Enter.",
+              "Klicke unter einzelnen Bildern auf Foto speichern, oder auf Alle Fotos herunterladen für ein ZIP.",
+              "Rechtsklick auf das ZIP in Downloads und Alle extrahieren wählen."
+            ]
+          },
+          {
+            "name": "Mac",
+            "steps": [
+              "Kopiere die Beitrags-URL aus Safari oder Chrome.",
+              "Füge sie hier mit Cmd+V ein und schicke ab.",
+              "Speichere die Bilder einzeln oder hol dir das ZIP.",
+              "Doppelklick auf das ZIP in Downloads, und der Finder entpackt es für dich."
+            ]
+          }
+        ]
+      },
+      "useCases": {
+        "title": "Warum Leute TikTok-Fotos speichern",
+        "subtitle": "Screenshots verlieren zu viele Details, als dass eines davon gut funktionieren würde.",
+        "items": [
+          {
+            "title": "Moodboards und Referenzen aufbauen",
+            "body": "Designer, Stylisten und Tätowierer sammeln ständig visuelle Referenzen. Dateien in voller Auflösung lohnen sich. Beschnittene Screenshots mit einem Text quer durchs Bild nicht."
+          },
+          {
+            "title": "In anderen Feeds erneut posten",
+            "body": "Instagram und Pinterest stellen Bilder in einer Qualität dar, die ein Handy-Screenshot nicht liefern kann. Von der Originaldatei auszugehen ist der Unterschied zwischen scharf und weich."
+          },
+          {
+            "title": "Rezepte, Anleitungen und Belege behalten",
+            "body": "In Foto-Karussells steckt viel wirklich Nützliches: Rezepte, Trainingspläne, Schritt-für-Schritt-Anleitungen. Den Satz zu sichern heißt, ihn noch zu haben, wenn der Beitrag verschwindet."
+          }
+        ]
+      }
+    },
+    "carousel": {
+      "intro": {
+        "title": "Ein komplettes TikTok-Karussell herunterladen",
+        "paragraphs": [
+          "Karussell, Slideshow, Foto-Beitrag: drei Namen für dieselbe Sache, ein TikTok aus mehreren Bildern, die man durchwischt, statt ein Video anzusehen. Die Bezeichnung schwankt, weil TikTok selbst mehr als einmal geändert hat, wie es dieses Format nennt.",
+          "Das praktische Problem bleibt in jedem Fall gleich. Es gibt keinen Download-Button, und einen Satz per Screenshot zu sichern heißt, jedes Bild von Hand zu wischen, aufzunehmen und zuzuschneiden. Ein Beitrag mit zwanzig Bildern wird zu mehreren Minuten stumpfer Arbeit, und am Ende hast du trotzdem nur bildschirmgroße Kopien.",
+          "Diese Seite behandelt den ganzen Beitrag als eine Einheit. Füge den Link ein und jedes Bild des Karussells kommt in Originalreihenfolge und Originalgröße zurück. Ein Button packt den kompletten Satz in ein ZIP, ein Beitrag mit vierzig Bildern ist damit ein Download statt vierzig.",
+          "Die Reihenfolge zählt mehr, als man denkt. Karussells sind oft sequenziell: Schritte eines Rezepts, Panels eines Comics, Vorher-Nachher-Aufnahmen. Das ZIP behält die Nummerierung, damit die Abfolge den Download überlebt."
+        ]
+      },
+      "specs": {
+        "title": "Was im ZIP steckt",
+        "subtitle": "Eine Datei pro Beitrag, jedes Mal gleich gebaut.",
+        "columns": {
+          "feature": "Eigenschaft",
+          "value": "Wert",
+          "note": "Was das heißt"
+        },
+        "rows": [
+          {
+            "feature": "Enthaltene Bilder",
+            "value": "Jedes Foto im Beitrag",
+            "note": "Nichts wird übersprungen oder ausgelassen, bis zu TikToks Grenze von 35 Bildern."
+          },
+          {
+            "feature": "Reihenfolge",
+            "value": "Originalsequenz",
+            "note": "Die Dateien sind nummeriert, ein Schritt-für-Schritt-Beitrag liest sich also weiterhin richtig."
+          },
+          {
+            "feature": "Auflösung",
+            "value": "Wie hochgeladen",
+            "note": "Volle Größe, nie auf Bildschirmmaß verkleinert."
+          },
+          {
+            "feature": "Format",
+            "value": "JPG in einem ZIP",
+            "note": "Entpackt mit den Bordmitteln von Windows, macOS, iOS und Android."
+          },
+          {
+            "feature": "Audio",
+            "value": "Separate MP3",
+            "note": "Bewusst außerhalb des ZIPs, damit du den Ton für sich holen kannst."
+          },
+          {
+            "feature": "Preis",
+            "value": "Kostenlos",
+            "note": "Kein Konto und keine Gebühr pro Beitrag, egal wie viele Bilder darin sind."
+          }
+        ]
+      },
+      "guides": {
+        "title": "So lädst du ein Karussell auf deinem Gerät",
+        "subtitle": "Ein Link rein, ein ZIP raus. Nur das Entpacken unterscheidet sich je nach Plattform.",
+        "platforms": [
+          {
+            "name": "iPhone und iPad",
+            "steps": [
+              "Tippe beim Karussell auf Teilen, dann auf Link kopieren.",
+              "Füge den Link ins Feld auf dieser Seite ein.",
+              "Tippe auf Alle Fotos herunterladen und warte, bis das Paket gebaut ist.",
+              "Öffne Dateien, tippe auf das ZIP, und iOS entpackt es in einen eigenen Ordner."
+            ]
+          },
+          {
+            "name": "Android",
+            "steps": [
+              "Kopiere den Beitragslink über Teilen und dann Link kopieren.",
+              "Füge ihn hier in Chrome ein und tippe auf Alle Fotos herunterladen.",
+              "Bestätige das Speichern, wenn Chrome fragt.",
+              "Öffne Dateien, tippe auf das ZIP und wähle Extrahieren."
+            ]
+          },
+          {
+            "name": "Windows-PC",
+            "steps": [
+              "Kopiere die Karussell-URL aus der Adressleiste auf tiktok.com.",
+              "Füge sie oben ins Feld ein und drücke Enter.",
+              "Klicke auf Alle Fotos herunterladen.",
+              "Rechtsklick auf das ZIP in Downloads und Alle extrahieren wählen."
+            ]
+          },
+          {
+            "name": "Mac",
+            "steps": [
+              "Kopiere die Beitrags-URL aus deinem Browser.",
+              "Füge sie hier ein und schicke ab.",
+              "Klicke auf Alle Fotos herunterladen.",
+              "Doppelklick auf das ZIP in Downloads, und das Archivierungsprogramm öffnet es von allein."
+            ]
+          }
+        ]
+      },
+      "useCases": {
+        "title": "Wo sich Karussell-Downloads auszahlen",
+        "subtitle": "Der Wert liegt darin, den Satz zusammenzuhalten, nicht nur in den einzelnen Bildern.",
+        "items": [
+          {
+            "title": "Schritt-für-Schritt-Inhalte sichern",
+            "body": "Rezepte, Tutorials und Trainingspläne werden meist als geordnete Sätze gepostet. Sie einzeln abzufotografieren bringt die Reihenfolge früher oder später durcheinander. Das ZIP nicht."
+          },
+          {
+            "title": "Eigene Beiträge archivieren",
+            "body": "Ersteller verlieren den Zugriff auf ihre eigene Arbeit, wenn ein Konto gesperrt oder ein Beitrag entfernt wird. Deine Karussells als ZIP zu ziehen gibt dir ein Backup, das nicht von der Plattform abhängt."
+          },
+          {
+            "title": "Referenzsammlungen anlegen",
+            "body": "Comic-Panels, Outfit-Aufschlüsselungen, Vorher-Nachher-Serien: Das ergibt nur als Gruppe Sinn. Sie zusammen zu halten sorgt dafür, dass der Zusammenhang neben den Bildern überlebt."
+          }
+        ]
+      }
     }
   }
 }

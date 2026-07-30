@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import * as React from "react";
 import {
   Download04Icon,
@@ -23,11 +22,11 @@ interface DownloadResultProps {
   dict: Dictionary["result"];
   locale: string;
   /**
-   * Where the "Download another video" button points. With the
-   * server-rendered flow this is the same page without the ?url= query
-   * — e.g. localePath(lang, "/") for the home variant.
+   * Clears the result and empties the input. A callback rather than a
+   * link because the lookup no longer lives in the URL — there's nothing
+   * to navigate back to, we just drop the state.
    */
-  resetHref: string;
+  onReset: () => void;
 }
 
 /**
@@ -50,7 +49,7 @@ function photoHref(url: string, filename: string): string {
  * download buttons (HD video, standard video, audio). For slideshow posts
  * it falls back to a photo grid with per-image save buttons.
  */
-export function DownloadResult({ result, dict, locale, resetHref }: DownloadResultProps) {
+export function DownloadResult({ result, dict, locale, onReset }: DownloadResultProps) {
   const isSlideshow = result.photos.length > 0 && result.videos.length === 0;
   const hd = result.videos.find((v) => v.kind === "video-hd");
   const sd = result.videos.find((v) => v.kind === "video-sd");
@@ -93,13 +92,14 @@ export function DownloadResult({ result, dict, locale, resetHref }: DownloadResu
   return (
     <article className="rounded-none md:rounded-lg border border-border bg-card p-4 shadow-card sm:p-6">
       <div className="mb-4 flex justify-end">
-        <Link
-          href={resetHref}
+        <button
+          type="button"
+          onClick={onReset}
           className="inline-flex h-9 items-center gap-2 rounded-md border border-border bg-background px-3 text-sm font-medium text-foreground hover:bg-muted"
         >
           <ReloadIcon size={14} aria-hidden />
           {dict.newSearch}
-        </Link>
+        </button>
       </div>
 
       <div className="flex flex-col gap-5 sm:flex-row">

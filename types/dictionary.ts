@@ -105,6 +105,77 @@ export interface Dictionary {
     photos: FaqSection;
     carousel: FaqSection;
   };
+  /**
+   * Long-form body copy for each landing page. A downloader is a thin
+   * page by nature — one heading and an input box give Google almost
+   * nothing to rank. These blocks are the substance: prose that answers
+   * what the tool does, a spec table, per-device walkthroughs, and the
+   * situations people actually use it for.
+   *
+   * Every block is written per page rather than shared, because the same
+   * paragraphs repeated across /, /mp3, /photos and /carousel would read
+   * as duplicate content and none of the four would rank well.
+   */
+  content: {
+    home: PageContent;
+    mp3: PageContent;
+    photos: PageContent;
+    carousel: PageContent;
+  };
+}
+
+export interface PageContent {
+  intro: IntroCopy;
+  specs: SpecTable;
+  guides: PlatformGuides;
+  useCases: UseCases;
+}
+
+/** Opening prose block — the main body text Google indexes for the page. */
+export interface IntroCopy {
+  title: string;
+  /** Rendered as separate <p> elements, in order. */
+  paragraphs: string[];
+}
+
+/**
+ * "What you get" table. Tables win featured snippets for comparison
+ * queries and give scanners something to read without wading through prose.
+ */
+export interface SpecTable {
+  title: string;
+  subtitle: string;
+  columns: SpecRow;
+  rows: SpecRow[];
+}
+
+export interface SpecRow {
+  feature: string;
+  value: string;
+  note: string;
+}
+
+/**
+ * Per-device walkthroughs. Targets long-tail queries like "download
+ * tiktok video without watermark on iphone", which convert far better
+ * than the generic head term.
+ */
+export interface PlatformGuides {
+  title: string;
+  subtitle: string;
+  platforms: PlatformGuide[];
+}
+
+export interface PlatformGuide {
+  /** Device family label, e.g. "iPhone & iPad". */
+  name: string;
+  steps: string[];
+}
+
+export interface UseCases {
+  title: string;
+  subtitle: string;
+  items: Array<{ title: string; body: string }>;
 }
 
 export interface FaqSection {

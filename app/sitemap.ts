@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 
 import { defaultLocale, getLocaleMeta, localeCodes, localePath } from "@/lib/i18n/config";
+import { siteOrigin } from "@/lib/site";
 
 /**
  * Path segments for every page that should appear in the sitemap. The
@@ -8,11 +9,6 @@ import { defaultLocale, getLocaleMeta, localeCodes, localePath } from "@/lib/i18
  * own sitemap entry per locale.
  */
 const PAGE_SEGMENTS = ["/", "/mp3", "/photos", "/carousel"] as const;
-
-function siteOrigin(): string {
-  const raw = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
-  return raw.replace(/\/+$/, "");
-}
 
 /**
  * Generate a sitemap with every page × locale URL plus the proper

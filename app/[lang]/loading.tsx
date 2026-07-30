@@ -1,4 +1,4 @@
-import { ResultLoader } from "@/components/result-loader";
+import { PageLoader } from "@/components/page-loader";
 
 /**
  * Soft-navigation loading state. Renders inside the locale layout, so
@@ -6,5 +6,5 @@ import { ResultLoader } from "@/components/result-loader";
  * swaps to the branded loader.
  */
 export default function Loading() {
-  return <ResultLoader />;
+  return <PageLoader />;
 }

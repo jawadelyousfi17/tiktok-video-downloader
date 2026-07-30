@@ -1,6 +1,5 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import * as React from "react";
 import { flushSync } from "react-dom";
 import {
@@ -12,116 +11,60 @@ import {
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { useDownloader } from "@/hooks/use-downloader";
 import { cn } from "@/lib/utils";
 import { isTikTokUrl } from "@/lib/tiktok";
-import type { Dictionary } from "@/types/dictionary";
-
-interface DownloaderFormProps {
-  formDict: Dictionary["hero"]["form"];
-  /** Pre-fills the input from ?url=… when the user is on a result render. */
-  initialUrl?: string | null;
-  /**
-   * Server-side error message produced by normalizeForRender in the
-   * parent page. The form just renders it underneath the input.
-   */
-  errorMessage?: string | null;
-}
 
 /**
- * URL input. Submits via Next's router.push() wrapped in useTransition
- * so the user gets immediate feedback the moment they click Download:
+ * URL input for the downloader. All state lives in DownloaderProvider, so
+ * this component is purely presentational plus event wiring — the result
+ * panel further down the page reads the same state.
  *
- *  - useTransition.isPending flips the button label to "Working on it"
- *    and disables the input + paste/clear controls
- *  - Navigation to ?url=… makes the result-area Suspense flush its
- *    skeleton fallback, so the loading state is visible everywhere
- *    relevant in the same paint as the click
- *
- * The form keeps method="GET" and works without JS — if the handler
- * throws or JS is disabled, the browser does its own native submission
- * to the same URL with ?url=, which the server-rendered page handles
- * identically.
+ * Submitting no longer navigates. The old flow pushed `?url=…` and let the
+ * server render the result, which is exactly what made these pages
+ * dynamic; now the provider posts to /api/fetch and the URL stays clean.
+ * A side benefit: no per-video URLs get created, so there's nothing for
+ * crawlers to index and nothing to mark noindex.
  */
-export function DownloaderForm({
-  formDict,
-  initialUrl,
-  errorMessage,
-}: DownloaderFormProps) {
-  const router = useRouter();
-  const [isPending, startTransition] = React.useTransition();
-  const [value, setValue] = React.useState(initialUrl ?? "");
-  const [clipboardError, setClipboardError] = React.useState<string | null>(null);
+export function DownloaderForm() {
+  const { value, setValue, setLocalError, submit, status, errorMessage, formDict } =
+    useDownloader();
   const inputRef = React.useRef<HTMLInputElement | null>(null);
-  const formRef = React.useRef<HTMLFormElement | null>(null);
 
-  // Track the last initialUrl we saw and resync `value` in render when it
-  // changes — covers the "Download another video" reset link, where the
-  // page re-renders without ?url= and the input should clear. Doing this
-  // in render (the React-recommended pattern for "adjusting state from
-  // props") avoids the cascading-render warning that comes with a
-  // setValue inside useEffect.
-  const [lastInitialUrl, setLastInitialUrl] = React.useState(initialUrl);
-  if (lastInitialUrl !== initialUrl) {
-    setLastInitialUrl(initialUrl);
-    setValue(initialUrl ?? "");
-  }
-
-  const displayError = errorMessage ?? clipboardError;
-  const isError =
-    displayError !== null && displayError !== undefined && displayError.length > 0;
-
-  function navigate(rawUrl: string) {
-    const trimmed = rawUrl.trim();
-    const search = trimmed
-      ? `?${new URLSearchParams({ url: trimmed }).toString()}`
-      : "";
-    setClipboardError(null);
-    startTransition(() => {
-      // Empty `path` means router.push uses the current pathname; we
-      // only swap the query string. That keeps a /mp3?url=… submit on
-      // /mp3 and a /photos?url=… submit on /photos.
-      router.push(search || ".");
-    });
-  }
+  const isPending = status === "loading";
+  const isError = Boolean(errorMessage);
 
   async function handlePaste() {
-    setClipboardError(null);
+    setLocalError(null);
     try {
       const text = await navigator.clipboard.readText();
       const trimmed = text.trim();
-      // flushSync forces React to commit the new <input value> to the
-      // DOM before we navigate — without it the input would briefly
-      // show empty before the new query landed.
+      // flushSync commits the new <input value> to the DOM before we kick
+      // off the lookup — without it the field would still look empty while
+      // the request is already running.
       flushSync(() => setValue(trimmed));
       if (isTikTokUrl(trimmed)) {
-        navigate(trimmed);
+        submit(trimmed);
       } else {
         inputRef.current?.focus();
       }
     } catch {
-      setClipboardError(formDict.errorClipboard);
+      setLocalError(formDict.errorClipboard);
     }
   }
 
   function handleClear() {
     setValue("");
-    setClipboardError(null);
     inputRef.current?.focus();
   }
 
-  function handleSubmit(event: React.SyntheticEvent<HTMLFormElement>) {
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    navigate(value);
+    submit();
   }
 
   return (
-    <form
-      ref={formRef}
-      method="GET"
-      onSubmit={handleSubmit}
-      noValidate
-      className="w-full"
-    >
+    <form onSubmit={handleSubmit} noValidate className="w-full">
       <label htmlFor="tiktok-url" className="sr-only">
         {formDict.label}
       </label>
@@ -150,10 +93,7 @@ export function DownloaderForm({
             spellCheck={false}
             placeholder={formDict.placeholder}
             value={value}
-            onChange={(e) => {
-              setValue(e.target.value);
-              setClipboardError(null);
-            }}
+            onChange={(e) => setValue(e.target.value)}
             aria-invalid={isError}
             aria-describedby="tiktok-url-status"
             disabled={isPending}
@@ -209,7 +149,7 @@ export function DownloaderForm({
           isError ? "text-danger" : "text-muted-foreground",
         )}
       >
-        {isError ? displayError : null}
+        {isError ? errorMessage : null}
       </p>
     </form>
   );

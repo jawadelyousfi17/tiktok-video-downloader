@@ -132,42 +132,648 @@
     "home": {
       "sectionTitle": "Pertanyaan umum",
       "items": [
-        { "question": "Bagaimana cara mengunduh video TikTok?", "answer": "Buka aplikasi TikTok atau tiktok.com, tap Bagikan di video, lalu Salin link. Tempel link di kolom atas dan pilih HD atau kualitas standar." },
-        { "question": "Apakah video yang disimpan ada watermark?", "answer": "Tidak. Kami berikan tampilan asli tanpa logo TikTok menutupi, siap dipost ulang atau disimpan." },
-        { "question": "Apakah gratis?", "answer": "Ya. Semua di sini gratis. Tanpa daftar, tanpa aplikasi, tanpa kartu kredit." },
-        { "question": "Kualitas seperti apa yang saya dapat?", "answer": "HD jika aslinya diunggah HD, kalau tidak kami ambil kualitas tertinggi yang disimpan TikTok untuk post itu." },
-        { "question": "Apakah jalan di iPhone dan Android?", "answer": "Ya. Halaman ini dirancang mobile-first. Tempel dan simpan langsung dari browser di HP." }
+        {
+          "question": "Bagaimana cara mengunduh video TikTok?",
+          "answer": "Buka aplikasi TikTok atau tiktok.com, tap Bagikan di video, lalu Salin link. Tempel link di kolom atas dan pilih HD atau kualitas standar."
+        },
+        {
+          "question": "Apakah video yang disimpan ada watermark?",
+          "answer": "Tidak. Kami berikan tampilan asli tanpa logo TikTok menutupi, siap dipost ulang atau disimpan."
+        },
+        {
+          "question": "Apakah gratis?",
+          "answer": "Ya. Semua di sini gratis. Tanpa daftar, tanpa aplikasi, tanpa kartu kredit."
+        },
+        {
+          "question": "Kualitas seperti apa yang saya dapat?",
+          "answer": "HD jika aslinya diunggah HD, kalau tidak kami ambil kualitas tertinggi yang disimpan TikTok untuk post itu."
+        },
+        {
+          "question": "Apakah jalan di iPhone dan Android?",
+          "answer": "Ya. Halaman ini dirancang mobile-first. Tempel dan simpan langsung dari browser di HP."
+        },
+        {
+          "question": "Bisakah saya mengunduh video privat atau khusus teman?",
+          "answer": "Tidak. Kami hanya bisa menjangkau unggahan publik. Kalau akunnya privat atau videonya dibatasi untuk teman, tidak ada yang bisa kami ambil."
+        },
+        {
+          "question": "Apakah kalian menyimpan video yang saya unduh?",
+          "answer": "Tidak. Tautan hanya dipakai untuk mencari unggahannya, lalu berkasnya mengalir langsung ke browser kamu. Kami menyimpan data unggahan sebentar di cache supaya tautan berulang lebih cepat, selebihnya tidak ada."
+        },
+        {
+          "question": "Apakah mengunduh video TikTok itu legal?",
+          "answer": "Menyimpan video untuk ditonton sendiri secara offline umumnya tidak masalah. Mengunggah ulang karya orang lain, memonetisasinya, atau mengaku sebagai milikmu, itu masalah. Hak ciptanya tetap milik pembuatnya, apa pun cara kamu mendapat berkasnya."
+        },
+        {
+          "question": "Kenapa unduhan saya gagal?",
+          "answer": "Penyebab tersering adalah akun privat, unggahan yang dihapus, video yang dikunci wilayah, atau tautan yang salah salin. Coba buka dulu URL-nya di browser. Kalau TikTok saja tidak menampilkannya, kami juga tidak bisa mengambilnya."
+        },
+        {
+          "question": "Ada batas berapa video yang bisa saya simpan?",
+          "answer": "Tidak ada kuota harian. Tapi kami membatasi seberapa cepat permintaan boleh datang dari satu koneksi, jadi kalau menempel puluhan tautan beruntun kamu mungkin diminta menunggu semenit."
+        },
+        {
+          "question": "Bisakah saya mengunduh video dalam 4K?",
+          "answer": "Hanya kalau pembuatnya mengunggah seperti itu, dan itu jarang terjadi. TikTok mengodekan ulang sebagian besar unggahan ke 1080p atau lebih rendah, dan kami tidak bisa mengembalikan kualitas yang memang tidak ada di server mereka."
+        }
       ]
     },
     "mp3": {
       "sectionTitle": "Pertanyaan tentang MP3 TikTok",
       "items": [
-        { "question": "Bagaimana cara menyimpan audio TikTok jadi MP3?", "answer": "Tempel link video TikTok di atas, lalu cari Simpan audio (MP3) di kartu hasil. Audionya terunduh sebagai .mp3." },
-        { "question": "Apakah MP3 ada watermark atau suara tambahan?", "answer": "Tidak. MP3 adalah suara asli yang bersih dari video, tanpa lapisan apa pun." },
-        { "question": "Bisa ambil musik dari TikTok mana saja?", "answer": "Bisa, asal postnya publik. Video biasa maupun post slideshow membawa audio aslinya." },
-        { "question": "Bagaimana kualitas MP3 nya?", "answer": "Kami pakai audio kualitas tertinggi yang disajikan TikTok. Kebanyakan file keluar di sekitar 128 kbps." },
-        { "question": "Perlu instal sesuatu?", "answer": "Tidak. Semua jalan di browser. Tempel, simpan, selesai." }
+        {
+          "question": "Bagaimana cara menyimpan audio TikTok jadi MP3?",
+          "answer": "Tempel link video TikTok di atas, lalu cari Simpan audio (MP3) di kartu hasil. Audionya terunduh sebagai .mp3."
+        },
+        {
+          "question": "Apakah MP3 ada watermark atau suara tambahan?",
+          "answer": "Tidak. MP3 adalah suara asli yang bersih dari video, tanpa lapisan apa pun."
+        },
+        {
+          "question": "Bisa ambil musik dari TikTok mana saja?",
+          "answer": "Bisa, asal postnya publik. Video biasa maupun post slideshow membawa audio aslinya."
+        },
+        {
+          "question": "Bagaimana kualitas MP3 nya?",
+          "answer": "Kami pakai audio kualitas tertinggi yang disajikan TikTok. Kebanyakan file keluar di sekitar 128 kbps."
+        },
+        {
+          "question": "Perlu instal sesuatu?",
+          "answer": "Tidak. Semua jalan di browser. Tempel, simpan, selesai."
+        },
+        {
+          "question": "Audionya lagu utuh atau cuma potongan di videonya?",
+          "answer": "Kamu dapat persis apa yang ada di unggahannya. Sound TikTok biasanya potongan 15 sampai 60 detik, jadi MP3-nya sepanjang itu, bukan lagu komersial penuh."
+        },
+        {
+          "question": "Bolehkah saya pakai sound hasil unduhan di TikTok saya sendiri?",
+          "answer": "Secara teknis bisa, tapi jarang perlu. Menekan nama sound di dalam TikTok akan melampirkannya secara asli lengkap dengan kredit, dan algoritmanya lebih menyukai itu ketimbang berkas audio yang diunggah ulang."
+        },
+        {
+          "question": "Apakah MP3-nya menyimpan nama artis dan judul?",
+          "answer": "Berkasnya diberi nama dari judul unggahan. TikTok tidak menyediakan tag ID3 yang rapi, jadi kamu mungkin ingin mengisi artis dan album sendiri di pemutar musikmu."
+        },
+        {
+          "question": "Kenapa kualitas audionya tidak lebih tinggi?",
+          "answer": "Kami mengembalikan aliran yang disimpan TikTok, dan tidak ada yang lebih baik di sisi mereka. Alat mana pun yang menjanjikan 320 kbps dari TikTok sebenarnya hanya menaikkan sampel sumber 128 kbps: ukuran bertambah, detail tidak."
+        },
+        {
+          "question": "Bisakah saya mengubah TikTok jadi WAV atau M4A?",
+          "answer": "Tidak dari halaman ini. Kami mengembalikan MP3 apa adanya seperti disimpan TikTok. Mengubahnya ke format lain setelahnya cuma satu langkah di editor audio atau konverter gratis mana pun."
+        },
+        {
+          "question": "Apakah ini bekerja untuk unggahan foto?",
+          "answer": "Ya. Korsel foto punya jalur audio sama seperti video, dan tombol simpan suaranya muncul di atas kisi foto."
+        }
       ]
     },
     "photos": {
       "sectionTitle": "Pertanyaan tentang foto TikTok",
       "items": [
-        { "question": "Bagaimana cara menyimpan foto TikTok?", "answer": "Tempel link post foto TikTok. Setiap gambar di kartu hasil punya tombol Simpan sendiri." },
-        { "question": "Apakah fotonya resolusi penuh?", "answer": "Ya. Kami serve gambar ukuran asli yang dihost TikTok, tanpa kompresi dari kami." },
-        { "question": "Bisa simpan semua foto sekaligus?", "answer": "Bisa. Tap Unduh semua foto dan kami akan paketkan semua gambar dalam satu zip." },
-        { "question": "Audio post foto ikut tersimpan?", "answer": "Audio muncul sebagai tombol MP3 terpisah di atas grid, jadi bisa kamu simpan terpisah." },
-        { "question": "Apakah jalan di iPhone dan Android?", "answer": "Ya. Tempel dan simpan langsung dari browser HP." }
+        {
+          "question": "Bagaimana cara menyimpan foto TikTok?",
+          "answer": "Tempel link post foto TikTok. Setiap gambar di kartu hasil punya tombol Simpan sendiri."
+        },
+        {
+          "question": "Apakah fotonya resolusi penuh?",
+          "answer": "Ya. Kami serve gambar ukuran asli yang dihost TikTok, tanpa kompresi dari kami."
+        },
+        {
+          "question": "Bisa simpan semua foto sekaligus?",
+          "answer": "Bisa. Tap Unduh semua foto dan kami akan paketkan semua gambar dalam satu zip."
+        },
+        {
+          "question": "Audio post foto ikut tersimpan?",
+          "answer": "Audio muncul sebagai tombol MP3 terpisah di atas grid, jadi bisa kamu simpan terpisah."
+        },
+        {
+          "question": "Apakah jalan di iPhone dan Android?",
+          "answer": "Ya. Tempel dan simpan langsung dari browser HP."
+        },
+        {
+          "question": "Kenapa tidak tangkap layar saja?",
+          "answer": "Tangkapan layar diambil pada resolusi layarmu dan ikut membawa antarmuka. Berkas aslinya biasanya dua sampai tiga kali lebih besar dalam piksel, dan tanpa tombol atau teks menutupinya."
+        },
+        {
+          "question": "Apakah pembuatnya tahu saya menyimpan fotonya?",
+          "answer": "Tidak. TikTok tidak memberi tahu siapa pun soal unduhan, dan permintaannya tidak pernah menyentuh akunmu karena di sini kamu tidak masuk akun."
+        },
+        {
+          "question": "Bisakah saya menyimpan foto dari akun privat?",
+          "answer": "Tidak. Hanya unggahan publik yang bisa dijangkau. Kalau tautannya tidak terbuka di browser tanpa login, kami juga tidak bisa mengambilnya."
+        },
+        {
+          "question": "Berapa banyak foto dalam satu unggahan?",
+          "answer": "Saat ini TikTok mengizinkan hingga 35 gambar per unggahan. Zip-nya sanggup menangani satu set penuh, berapa pun jumlahnya."
+        },
+        {
+          "question": "Zip-nya lama sekali. Apakah macet?",
+          "answer": "Semua gambar harus diambil dulu sebelum berkasnya bisa dirakit, jadi set berisi 30 foto lebih lama daripada 3 foto. Beri beberapa detik sebelum mencoba lagi."
+        },
+        {
+          "question": "Bolehkah foto ini dipakai untuk keperluan komersial?",
+          "answer": "Tidak tanpa izin. Mengunduh tidak mengubah apa pun soal kepemilikan, hak ciptanya tetap pada yang membuat gambarnya."
+        }
       ]
     },
     "carousel": {
       "sectionTitle": "Pertanyaan tentang carousel TikTok",
       "items": [
-        { "question": "Apa itu carousel TikTok?", "answer": "Carousel — kadang disebut photo post atau slideshow — adalah post TikTok yang berisi beberapa foto, bukan satu video." },
-        { "question": "Bagaimana cara mengunduh carousel TikTok?", "answer": "Tempel link postingan di atas. Kami tampilkan setiap foto dalam grid dan menyediakan tombol Unduh semua untuk membungkus semuanya." },
-        { "question": "Apakah saya benar-benar dapat semua foto?", "answer": "Ya. Zipnya berisi setiap gambar dalam urutan asli dengan kualitas penuh." },
-        { "question": "Audionya ikut di dalam zip?", "answer": "Tidak. Audio kami sajikan sebagai tombol MP3 terpisah supaya bisa disimpan tanpa membongkar zip." },
-        { "question": "Kenapa carousel kadang disebut slideshow?", "answer": "Aplikasi yang berbeda memakai nama berbeda. Datanya sama: post TikTok yang berisi beberapa foto." }
+        {
+          "question": "Apa itu carousel TikTok?",
+          "answer": "Carousel — kadang disebut photo post atau slideshow — adalah post TikTok yang berisi beberapa foto, bukan satu video."
+        },
+        {
+          "question": "Bagaimana cara mengunduh carousel TikTok?",
+          "answer": "Tempel link postingan di atas. Kami tampilkan setiap foto dalam grid dan menyediakan tombol Unduh semua untuk membungkus semuanya."
+        },
+        {
+          "question": "Apakah saya benar-benar dapat semua foto?",
+          "answer": "Ya. Zipnya berisi setiap gambar dalam urutan asli dengan kualitas penuh."
+        },
+        {
+          "question": "Audionya ikut di dalam zip?",
+          "answer": "Tidak. Audio kami sajikan sebagai tombol MP3 terpisah supaya bisa disimpan tanpa membongkar zip."
+        },
+        {
+          "question": "Kenapa carousel kadang disebut slideshow?",
+          "answer": "Aplikasi yang berbeda memakai nama berbeda. Datanya sama: post TikTok yang berisi beberapa foto."
+        },
+        {
+          "question": "Berapa banyak gambar yang bisa diunduh sekaligus?",
+          "answer": "Sebanyak isi unggahannya. TikTok membatasi korsel di 35 gambar, dan zip-nya sanggup menangani set penuh."
+        },
+        {
+          "question": "Kenapa ini lebih lama daripada mengunduh video?",
+          "answer": "Kami mengambil semua gambar sebelum merakit zip, jadi waktu tunggunya ikut jumlah foto. Set besar butuh beberapa detik lebih lama daripada satu video."
+        },
+        {
+          "question": "Bisakah saya mengunduh satu foto saja dari korsel?",
+          "answer": "Bisa. Setiap gambar di kisi punya tombol simpan sendiri, jadi kamu bisa mengambil satu tanpa menyentuh zip-nya."
+        },
+        {
+          "question": "Apakah urutan berkasnya tetap sama?",
+          "answer": "Ya. Tiap berkas dinomori sesuai posisinya di unggahan, jadi konten berurutan tetap terbaca benar setelah diekstrak."
+        },
+        {
+          "question": "Bisakah saya mengunduh korsel dari akun privat?",
+          "answer": "Tidak. Hanya unggahan publik yang bisa diambil. Kalau tautannya tidak terbuka di browser tanpa login, di sini juga tidak akan jalan."
+        },
+        {
+          "question": "Apakah zip-nya memuat caption atau tagar?",
+          "answer": "Tidak. Zip-nya hanya berisi gambar. Kalau kamu butuh caption-nya, salin dari unggahannya sebelum mengunduh."
+        }
       ]
+    }
+  },
+  "content": {
+    "home": {
+      "intro": {
+        "title": "Apa yang sebenarnya dilakukan pengunduh TikTok ini",
+        "paragraphs": [
+          "TikTok tidak menyediakan cara yang bersih untuk menyimpan video. Tombol unduh di aplikasinya membakar watermark di atas gambar dan menempelkan nama pembuatnya di pojok, sehingga klipnya nyaris tidak berguna di luar TikTok sendiri. Video yang ditandai pembuatnya sebagai tidak boleh diunduh bahkan tidak menawarkan itu. Halaman ini menutup celah tersebut: tempel tautan TikTok publik dan kamu mendapat MP4 aslinya kembali, berkas yang sama yang diputar TikTok di berandamu, tanpa apa pun menutupinya.",
+          "Semuanya berjalan lewat browser kamu. Tidak ada aplikasi yang perlu dipasang, tidak ada akun yang perlu dibuat, tidak ada antrean. Saat kamu menempel tautan, kami membaca data publik unggahannya, mengambil URL video langsungnya, lalu menyerahkannya ke browser sebagai unduhan biasa. Setelah itu tidak ada sisa video di server kami, dan kami tidak pernah melihat apa pun yang tidak kamu tempel sendiri.",
+          "Kualitasnya tergantung apa yang diunggah pembuatnya. Kebanyakan TikTok direkam di 1080p dan kami mengembalikan resolusi itu bila tersedia, kalau tidak ya versi terbaik yang disimpan TikTok untuk unggahan tersebut. Selain video, kamu juga mendapat jalur audionya terpisah sebagai MP3, berguna saat suaranya lebih penting daripada gambarnya.",
+          "Ini menangani video biasa, unggahan foto, dan slideshow. Kalau tautannya mengarah ke korsel gambar dan bukan video, hasilnya berubah jadi kisi foto dengan tombol simpan di bawah tiap gambar plus zip untuk set lengkapnya."
+        ]
+      },
+      "specs": {
+        "title": "Apa yang kamu dapat dari setiap tautan",
+        "subtitle": "Semua unduhan lewat alur yang sama, jadi hasilnya bisa ditebak apa pun unggahan yang kamu tempel.",
+        "columns": {
+          "feature": "Apa",
+          "value": "Kamu dapat",
+          "note": "Rincian"
+        },
+        "rows": [
+          {
+            "feature": "Kualitas video",
+            "value": "Hingga 1080p HD",
+            "note": "Kami mengembalikan resolusi tertinggi yang disimpan TikTok. Unggahan lama kadang mentok di 720p."
+          },
+          {
+            "feature": "Watermark",
+            "value": "Hilang",
+            "note": "Berkasnya gambar asli, tanpa logo TikTok dan tanpa nama pengguna menutupi."
+          },
+          {
+            "feature": "Format video",
+            "value": "MP4 (H.264)",
+            "note": "Jalan langsung di iOS, Android, Windows, macOS, dan semua editor besar."
+          },
+          {
+            "feature": "Audio",
+            "value": "MP3, sekitar 128 kbps",
+            "note": "Disimpan sebagai berkas sendiri, supaya kamu bisa ambil suaranya tanpa gambarnya."
+          },
+          {
+            "feature": "Unggahan foto",
+            "value": "JPG ukuran penuh",
+            "note": "Dimensi asli, tanpa kompresi ulang. Satu per satu atau dalam satu zip."
+          },
+          {
+            "feature": "Biaya dan batas",
+            "value": "Gratis, tanpa akun",
+            "note": "Tanpa batas harian untuk pemakaian normal. Kami hanya memperlambat lonjakan yang tampak otomatis."
+          }
+        ]
+      },
+      "guides": {
+        "title": "Cara mengunduh TikTok di perangkatmu",
+        "subtitle": "Langkahnya hampir sama di mana-mana. Bedanya cuma di mana berkasnya mendarat.",
+        "platforms": [
+          {
+            "name": "iPhone dan iPad",
+            "steps": [
+              "Buka aplikasi TikTok, cari videonya, lalu ketuk panah Bagikan di sisi kanan.",
+              "Ketuk Salin tautan. Kalau kamu di tiktok.com lewat Safari, salin alamatnya dari bilah URL.",
+              "Kembali ke halaman ini, ketuk kolom isian, lalu pilih Tempel dari menu yang muncul.",
+              "Ketuk Unduh. Safari menyimpan berkasnya ke Files, dan dari sana bisa kamu pindahkan ke Photos."
+            ]
+          },
+          {
+            "name": "Android",
+            "steps": [
+              "Di aplikasi TikTok, ketuk Bagikan pada videonya lalu pilih Salin tautan.",
+              "Pindah ke Chrome, buka halaman ini, dan tekan lama kolom isian untuk menempel.",
+              "Tekan Unduh dan setujui penyimpanan kalau Chrome bertanya.",
+              "Videonya masuk ke folder Download dan muncul di Galeri dalam waktu semenit."
+            ]
+          },
+          {
+            "name": "PC Windows",
+            "steps": [
+              "Buka tiktok.com di browser mana pun lalu klik video yang kamu mau.",
+              "Klik Bagikan di bawah videonya, lalu Salin tautan. Menyalin URL dari bilah alamat juga bisa.",
+              "Tempel di kolom atas halaman ini lalu tekan Enter.",
+              "Pilih HD dan berkasnya langsung masuk ke folder Download."
+            ]
+          },
+          {
+            "name": "Mac",
+            "steps": [
+              "Salin tautannya dari aplikasi TikTok di ponsel lalu kirim lewat AirDrop, atau buka tiktok.com di Safari.",
+              "Tempel tautannya di kolom di atas dengan Cmd+V.",
+              "Klik Unduh dan pilih kualitas yang kamu mau.",
+              "Safari menaruh MP4-nya di Downloads, siap untuk Final Cut, Premiere, atau QuickTime."
+            ]
+          }
+        ]
+      },
+      "useCases": {
+        "title": "Kenapa orang menyimpan TikTok",
+        "subtitle": "Salinan tanpa watermark jauh lebih berharga daripada rekaman layar dalam semua situasi ini.",
+        "items": [
+          {
+            "title": "Mengunggah ulang ke platform lain",
+            "body": "Klip berwatermark TikTok ditekan jangkauannya oleh Instagram Reels dan YouTube Shorts, yang sama-sama menurunkan konten daur ulang begitu bisa mereka kenali. Berkas yang bersih memberi video yang sama kesempatan yang adil di tiap platform."
+          },
+          {
+            "title": "Menyunting dan me-remix",
+            "body": "Penyunting butuh materi mentah tanpa logo yang memantul di layar. Menyimpan MP4 mentah membuatmu bisa memotong, memberi teks, dan mengoreksi warna tanpa menyiasati tempelan yang tak bisa dihapus."
+          },
+          {
+            "title": "Menyimpan salinan offline",
+            "body": "Unggahan bisa hilang. Pembuatnya menghapus, akunnya dikunci, dan moderasi mencabut sesuatu tanpa pemberitahuan. Kalau sebuah video penting bagimu, salinan di penyimpananmu sendiri adalah satu-satunya jaminan nyata."
+          }
+        ]
+      }
+    },
+    "mp3": {
+      "intro": {
+        "title": "Mengubah TikTok menjadi MP3",
+        "paragraphs": [
+          "TikTok kini jadi tempat banyak orang menemukan musik, tapi aplikasinya tidak memberi cara untuk menyimpan suaranya. Kamu bisa menaruh video di draf atau menambahkan sound ke favorit, dan keduanya cuma berlaku di dalam TikTok. Begitu kamu ingin audionya sebagai berkas, di perangkatmu, di pemutar pilihanmu, aplikasinya jadi jalan buntu.",
+          "Halaman ini menarik jalur audio dari unggahannya lalu mengembalikannya sebagai MP3. Ini bekerja dengan suara asli yang direkam pembuatnya, musik berlisensi yang menempel di video, sulih suara, dan latar suara di bawah slideshow foto. Apa pun yang diputar unggahan itu, kamu dapat sebagai berkas.",
+          "Pengambilannya terjadi di sisi kami dan hanya butuh beberapa detik. Kamu tidak sedang merekam ulang tangkapan layar atau menyadap suara speaker sendiri, jadi tidak ada penurunan kualitas, tidak ada desis latar, dan tidak ada bunyi notifikasi yang tanpa sengaja ikut terekam.",
+          "Berkasnya keluar di kisaran 128 kbps, sesuai yang disediakan TikTok. Itu lebih dari cukup untuk didengarkan, dijadikan sampel, atau ditaruh di bawah sebuah suntingan. Memang tidak akan setara master studio, sederhananya karena versi seperti itu tidak ada di sisi TikTok."
+        ]
+      },
+      "specs": {
+        "title": "Seperti apa berkas MP3-nya",
+        "subtitle": "Setiap unduhan audio keluar sama, entah sumbernya video atau unggahan foto.",
+        "columns": {
+          "feature": "Properti",
+          "value": "Nilai",
+          "note": "Artinya"
+        },
+        "rows": [
+          {
+            "feature": "Format",
+            "value": "MP3",
+            "note": "Terbuka di semua pemutar, ponsel, dan editor tanpa perlu dikonversi."
+          },
+          {
+            "feature": "Bitrate",
+            "value": "Sekitar 128 kbps",
+            "note": "Kualitas yang disimpan TikTok. Kami meneruskannya apa adanya, bukan mengodekan ulang."
+          },
+          {
+            "feature": "Durasi",
+            "value": "Trek penuh",
+            "note": "Kamu dapat audionya selama unggahan itu memutarnya, bukan cuplikan yang dipotong."
+          },
+          {
+            "feature": "Watermark",
+            "value": "Tidak ada",
+            "note": "Tanpa tempelan suara, tanpa bip, tanpa merek menutupi suaranya."
+          },
+          {
+            "feature": "Unggahan yang didukung",
+            "value": "Video dan slideshow",
+            "note": "Korsel foto juga punya jalur audio, dan cara unduhnya sama."
+          },
+          {
+            "feature": "Biaya",
+            "value": "Gratis",
+            "note": "Tanpa akun, tanpa pemasangan, tanpa batas untuk pemakaian normal."
+          }
+        ]
+      },
+      "guides": {
+        "title": "Cara menyimpan audio TikTok di perangkatmu",
+        "subtitle": "Mengambil tautannya sama di mana-mana. Yang berbeda cuma ke mana MP3-nya mendarat.",
+        "platforms": [
+          {
+            "name": "iPhone dan iPad",
+            "steps": [
+              "Ketuk Bagikan di TikTok-nya, lalu Salin tautan.",
+              "Buka halaman ini di Safari dan tempel tautannya di kolom isian.",
+              "Ketuk Unduh, lalu cari Simpan audio (MP3) di kartu yang muncul.",
+              "Berkasnya masuk ke Files. Buka di sana atau impor ke aplikasi musikmu."
+            ]
+          },
+          {
+            "name": "Android",
+            "steps": [
+              "Pakai Bagikan lalu Salin tautan di dalam aplikasi TikTok.",
+              "Tempel tautannya di sini lewat Chrome lalu ketuk Unduh.",
+              "Pilih Simpan audio (MP3) di kartu hasilnya.",
+              "MP3-nya masuk ke Download dan kebanyakan pemutar musik menemukannya sendiri."
+            ]
+          },
+          {
+            "name": "PC Windows",
+            "steps": [
+              "Salin URL videonya dari bilah alamat di tiktok.com.",
+              "Tempel di kolom di atas lalu tekan Enter.",
+              "Klik Simpan audio (MP3) setelah hasilnya muncul.",
+              "Cari berkasnya di Download, siap untuk pemutar atau editor apa pun."
+            ]
+          },
+          {
+            "name": "Mac",
+            "steps": [
+              "Buka TikTok-nya di Safari atau Chrome lalu salin URL-nya.",
+              "Tempel di sini dengan Cmd+V lalu kirim.",
+              "Klik Simpan audio (MP3).",
+              "Seret berkasnya dari Downloads langsung ke Music, Logic, atau editormu."
+            ]
+          }
+        ]
+      },
+      "useCases": {
+        "title": "Yang orang lakukan dengan audio TikTok",
+        "subtitle": "Suaranya sering bertahan lebih lama daripada video asalnya.",
+        "items": [
+          {
+            "title": "Menemukan lagu yang tidak kamu tahu judulnya",
+            "body": "Sebuah suara menarik perhatianmu di beranda tapi judulnya tidak muncul di mana pun. Menyimpan MP3-nya membuatmu bisa memasukkannya ke pengenal musik, atau sekadar terus mendengarkan sambil mencari tahu."
+          },
+          {
+            "title": "Memakai sebuah sound di suntinganmu",
+            "body": "Audio yang sedang tren menaikkan jangkauan. Punya treknya sebagai berkas membuatmu bisa menyunting materimu di atasnya lewat editor sungguhan, bukan bergulat dengan linimasa bawaan TikTok."
+          },
+          {
+            "title": "Menyimpan rekaman suara dan wawancara",
+            "body": "Tidak semua TikTok itu musik. Wawancara, cerita panjang, dan kuliah layak disimpan sebagai audio yang bisa kamu dengarkan ulang tanpa menghabiskan kuota untuk videonya."
+          }
+        ]
+      }
+    },
+    "photos": {
+      "intro": {
+        "title": "Menyimpan foto dari unggahan TikTok",
+        "paragraphs": [
+          "Tidak semua di TikTok berupa video. Unggahan foto diam-diam sudah jadi bagian besar dari beranda, dan perilakunya berbeda dari klip: gambar diam dengan latar suara, digeser alih-alih diputar. TikTok sama sekali tidak menyediakan tombol simpan untuk itu, jadi jalan pintas yang biasa dipakai adalah tangkapan layar.",
+          "Tangkapan layar mahal harganya. Ia diambil pada resolusi layarmu, bukan resolusi gambarnya, ikut membakar antarmuka, dan memotong apa pun yang tertutup caption atau bilah samping. Yang kamu simpan adalah foto dari sebuah foto.",
+          "Halaman ini mengembalikan berkas gambar yang sesungguhnya. Tempel tautan unggahan foto dan kamu mendapat setiap gambar dalam set itu pada dimensi yang diunggah pembuatnya, tanpa elemen antarmuka, tanpa kompresi tambahan dari kami, dan tanpa ada yang terpotong di tepinya.",
+          "Setiap foto punya tombol simpan sendiri, jadi kamu bisa mengambil hanya yang kamu inginkan. Kalau mau semuanya, satu tombol membungkus seluruh gambar ke dalam zip dengan urutan aslinya. Jalur audionya tersedia terpisah sebagai MP3."
+        ]
+      },
+      "specs": {
+        "title": "Apa yang kamu dapat dari unggahan foto",
+        "subtitle": "Hasil yang sama setiap kali, entah unggahannya berisi dua gambar atau empat puluh.",
+        "columns": {
+          "feature": "Properti",
+          "value": "Nilai",
+          "note": "Artinya"
+        },
+        "rows": [
+          {
+            "feature": "Kualitas gambar",
+            "value": "Resolusi asli",
+            "note": "Berkas yang disimpan TikTok, bukan salinan seukuran layar. Biasanya jauh di atas hasil tangkapan layar."
+          },
+          {
+            "feature": "Format",
+            "value": "JPG",
+            "note": "Format standar yang bisa dibuka di mana saja dan diimpor ke editor apa pun."
+          },
+          {
+            "feature": "Kompresi",
+            "value": "Tidak ada dari kami",
+            "note": "Kami meneruskan berkasnya utuh, tanpa kompresi kedua di atas milik TikTok."
+          },
+          {
+            "feature": "Elemen antarmuka",
+            "value": "Tidak ada",
+            "note": "Tanpa caption, tombol, nama pengguna, atau bilah samping yang menempel di gambar."
+          },
+          {
+            "feature": "Unduh sekaligus",
+            "value": "Zip berisi set penuh",
+            "note": "Semua gambar dalam urutan asli, dalam satu berkas."
+          },
+          {
+            "feature": "Audio",
+            "value": "MP3 terpisah",
+            "note": "Sengaja di luar zip supaya kamu bisa mengambil suaranya tanpa mengekstrak apa pun."
+          }
+        ]
+      },
+      "guides": {
+        "title": "Cara menyimpan foto TikTok di perangkatmu",
+        "subtitle": "Salin tautan unggahannya seperti kamu menyalin tautan video. Sisanya cuma satu ketukan per gambar.",
+        "platforms": [
+          {
+            "name": "iPhone dan iPad",
+            "steps": [
+              "Buka unggahan fotonya di TikTok lalu ketuk panah Bagikan.",
+              "Pilih Salin tautan.",
+              "Tempel di kolom pada halaman ini lalu ketuk Unduh.",
+              "Ketuk Simpan foto di bawah gambar mana pun. Safari menaruhnya di Files, dan dari sana bisa kamu tambahkan ke Photos."
+            ]
+          },
+          {
+            "name": "Android",
+            "steps": [
+              "Ketuk Bagikan pada unggahan fotonya, lalu Salin tautan.",
+              "Buka halaman ini di Chrome dan tempel tautannya.",
+              "Ketuk Simpan foto pada gambar yang kamu mau, atau Unduh semua foto untuk satu set.",
+              "Berkasnya masuk ke Download dan muncul di Galeri tak lama kemudian."
+            ]
+          },
+          {
+            "name": "PC Windows",
+            "steps": [
+              "Buka unggahan fotonya di tiktok.com lalu salin URL dari bilah alamat.",
+              "Tempel di kolom di atas lalu tekan Enter.",
+              "Klik Simpan foto di bawah tiap gambar, atau Unduh semua foto untuk zip.",
+              "Klik kanan zip-nya di Download lalu pilih Extract All."
+            ]
+          },
+          {
+            "name": "Mac",
+            "steps": [
+              "Salin URL unggahannya dari Safari atau Chrome.",
+              "Tempel di sini dengan Cmd+V lalu kirim.",
+              "Simpan gambarnya satu per satu, atau ambil zip-nya.",
+              "Klik dua kali zip-nya di Downloads dan Finder mengekstraknya untukmu."
+            ]
+          }
+        ]
+      },
+      "useCases": {
+        "title": "Kenapa orang menyimpan foto TikTok",
+        "subtitle": "Tangkapan layar kehilangan terlalu banyak detail untuk semua pemakaian ini.",
+        "items": [
+          {
+            "title": "Menyusun moodboard dan referensi",
+            "body": "Desainer, penata gaya, dan seniman tato terus-menerus mengumpulkan referensi visual. Berkas beresolusi penuh layak disimpan. Tangkapan layar terpotong dengan caption melintang di tengahnya tidak."
+          },
+          {
+            "title": "Mengunggah ulang ke beranda lain",
+            "body": "Instagram dan Pinterest menampilkan gambar pada kualitas yang tidak bisa dipenuhi tangkapan layar ponsel. Memulai dari berkas asli adalah beda antara tajam dan buram."
+          },
+          {
+            "title": "Menyimpan resep, panduan, dan bukti",
+            "body": "Banyak informasi yang benar-benar berguna hidup di korsel foto: resep, program latihan, panduan langkah demi langkah. Menyimpan setnya berarti kamu masih memilikinya saat unggahannya hilang."
+          }
+        ]
+      }
+    },
+    "carousel": {
+      "intro": {
+        "title": "Mengunduh korsel TikTok secara utuh",
+        "paragraphs": [
+          "Korsel, slideshow, unggahan foto: tiga nama untuk hal yang sama, yaitu TikTok yang terdiri dari beberapa gambar yang kamu geser alih-alih video yang kamu tonton. Penamaannya tidak konsisten karena TikTok sendiri sudah lebih dari sekali mengubah sebutan untuk format ini.",
+          "Masalah praktisnya tetap sama. Tidak ada tombol unduh, dan menyimpan satu set lewat tangkapan layar berarti menggeser, menangkap, lalu memotong tiap gambar dengan tangan. Unggahan berisi dua puluh gambar berubah jadi beberapa menit pekerjaan membosankan, dan hasilnya tetap salinan seukuran layar.",
+          "Halaman ini memperlakukan seluruh unggahan sebagai satu kesatuan. Tempel tautannya dan semua gambar di korsel kembali dalam urutan dan ukuran aslinya. Satu tombol membungkus set penuh ke dalam zip, jadi unggahan berisi empat puluh gambar cukup satu unduhan, bukan empat puluh.",
+          "Urutannya lebih penting daripada yang orang kira. Korsel sering bersifat berurutan: langkah-langkah resep, panel komik, foto sebelum dan sesudah. Zip-nya menjaga penomoran supaya urutannya tetap utuh setelah diunduh."
+        ]
+      },
+      "specs": {
+        "title": "Isi zip-nya",
+        "subtitle": "Satu berkas per unggahan, dirakit dengan cara yang sama setiap kali.",
+        "columns": {
+          "feature": "Properti",
+          "value": "Nilai",
+          "note": "Artinya"
+        },
+        "rows": [
+          {
+            "feature": "Gambar yang disertakan",
+            "value": "Semua foto di unggahan",
+            "note": "Tidak ada yang dilewati atau disaring, sampai batas 35 gambar milik TikTok."
+          },
+          {
+            "feature": "Urutan",
+            "value": "Urutan asli",
+            "note": "Berkasnya dinomori, jadi unggahan langkah demi langkah tetap terbaca benar."
+          },
+          {
+            "feature": "Resolusi",
+            "value": "Seperti diunggah",
+            "note": "Ukuran penuh, tidak pernah diperkecil agar muat di layar."
+          },
+          {
+            "feature": "Format",
+            "value": "JPG di dalam zip",
+            "note": "Bisa diekstrak dengan alat bawaan Windows, macOS, iOS, dan Android."
+          },
+          {
+            "feature": "Audio",
+            "value": "MP3 terpisah",
+            "note": "Sengaja ditinggal di luar zip supaya kamu bisa mengambil suaranya sendiri."
+          },
+          {
+            "feature": "Biaya",
+            "value": "Gratis",
+            "note": "Tanpa akun dan tanpa biaya per unggahan, berapa pun jumlah gambarnya."
+          }
+        ]
+      },
+      "guides": {
+        "title": "Cara mengunduh korsel di perangkatmu",
+        "subtitle": "Satu tautan masuk, satu zip keluar. Hanya cara mengekstraknya yang berbeda tiap platform.",
+        "platforms": [
+          {
+            "name": "iPhone dan iPad",
+            "steps": [
+              "Ketuk Bagikan pada unggahan korselnya, lalu Salin tautan.",
+              "Tempel tautannya di kolom pada halaman ini.",
+              "Ketuk Unduh semua foto lalu tunggu paketnya selesai dirakit.",
+              "Buka Files, ketuk zip-nya, dan iOS mengekstraknya ke folder tersendiri."
+            ]
+          },
+          {
+            "name": "Android",
+            "steps": [
+              "Salin tautan unggahannya lewat Bagikan lalu Salin tautan.",
+              "Tempel di sini lewat Chrome lalu ketuk Unduh semua foto.",
+              "Setujui penyimpanan saat Chrome bertanya.",
+              "Buka Files, ketuk zip-nya, lalu pilih Ekstrak."
+            ]
+          },
+          {
+            "name": "PC Windows",
+            "steps": [
+              "Salin URL korselnya dari bilah alamat di tiktok.com.",
+              "Tempel di kolom di atas lalu tekan Enter.",
+              "Klik Unduh semua foto.",
+              "Klik kanan zip-nya di Download lalu pilih Extract All."
+            ]
+          },
+          {
+            "name": "Mac",
+            "steps": [
+              "Salin URL unggahannya dari browsermu.",
+              "Tempel di sini lalu kirim.",
+              "Klik Unduh semua foto.",
+              "Klik dua kali zip-nya di Downloads dan Archive Utility membukanya otomatis."
+            ]
+          }
+        ]
+      },
+      "useCases": {
+        "title": "Di mana unduhan korsel benar-benar berguna",
+        "subtitle": "Nilainya ada pada menjaga satu set tetap utuh, bukan cuma gambarnya satu per satu.",
+        "items": [
+          {
+            "title": "Menyimpan konten langkah demi langkah",
+            "body": "Resep, tutorial, dan program latihan biasanya diunggah sebagai set berurutan. Menangkap layarnya satu per satu cepat atau lambat akan mengacaukan urutannya. Zip-nya tidak."
+          },
+          {
+            "title": "Mengarsipkan unggahanmu sendiri",
+            "body": "Pembuat konten kehilangan akses ke karyanya sendiri saat akun dikunci atau unggahan dicabut. Menarik korselmu sebagai zip memberimu cadangan yang tidak bergantung pada platform."
+          },
+          {
+            "title": "Mengumpulkan set referensi",
+            "body": "Panel komik, uraian gaya berpakaian, seri sebelum dan sesudah: semua itu hanya masuk akal sebagai satu kelompok. Menyimpannya terbungkus membuat konteksnya bertahan bersama gambarnya."
+          }
+        ]
+      }
     }
   }
 }

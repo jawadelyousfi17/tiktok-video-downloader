@@ -136,7 +136,13 @@
         { "question": "Will the saved video have a watermark?", "answer": "No. We give you back the original frame without the TikTok logo overlaid, so the video is ready to repost or save for later." },
         { "question": "Is the downloader free?", "answer": "Yes. Every feature here is free. No sign up, no app to install, no credit card." },
         { "question": "What video quality can I get?", "answer": "HD when the original was uploaded in HD, otherwise the highest quality TikTok stored for that post." },
-        { "question": "Does it work on iPhone and Android?", "answer": "Yes. The page is built mobile-first, so pasting and saving both work directly from your phone's browser." }
+        { "question": "Does it work on iPhone and Android?", "answer": "Yes. The page is built mobile-first, so pasting and saving both work directly from your phone's browser." },
+        { "question": "Can I download private or friends-only videos?", "answer": "No. We can only reach posts that are public. If the account is private or the video is limited to friends, there is nothing for us to fetch." },
+        { "question": "Do you store the videos I download?", "answer": "No. The link is used to look up the post and the file streams straight through to your browser. We keep a short-lived cache of post details so repeat links are faster, and nothing else." },
+        { "question": "Is downloading TikTok videos legal?", "answer": "Saving a video for your own offline viewing is generally fine. Republishing someone else's work, monetising it, or passing it off as your own is not. Copyright stays with the creator no matter how you got the file." },
+        { "question": "Why did my download fail?", "answer": "The usual causes are a private account, a deleted post, a region-locked video, or a mistyped link. Open the URL in a browser first. If TikTok cannot show it to you, we cannot fetch it either." },
+        { "question": "Is there a limit on how many videos I can save?", "answer": "There is no daily quota. We do cap how quickly requests can arrive from one connection, so pasting dozens of links back to back may ask you to wait a minute." },
+        { "question": "Can I download a video in 4K?", "answer": "Only if the creator uploaded it that way, which is rare. TikTok re-encodes most uploads to 1080p or lower, and we cannot return quality that does not exist on their servers." }
       ]
     },
     "mp3": {
@@ -146,7 +152,13 @@
         { "question": "Does the MP3 have any watermark or voice tag?", "answer": "No. The MP3 is the clean original sound from the video, with nothing layered on top." },
         { "question": "Can I extract music from any TikTok?", "answer": "Yes, as long as the post is public. Both regular videos and slideshow posts include the original audio track." },
         { "question": "What is the MP3 quality?", "answer": "We use the highest quality audio stream TikTok serves. Most files come out around 128 kbps, which is plenty for sharing or remixing." },
-        { "question": "Do I need to install anything?", "answer": "No. Everything runs in the browser. Paste the link, save the file, done." }
+        { "question": "Do I need to install anything?", "answer": "No. Everything runs in the browser. Paste the link, save the file, done." },
+        { "question": "Is the audio the full song or just the clip used in the video?", "answer": "You get exactly what the post contains. TikTok sounds are usually 15 to 60 second cuts, so the MP3 matches that length rather than the full commercial track." },
+        { "question": "Can I use a downloaded sound in my own TikTok?", "answer": "Technically yes, but you rarely need to. Tapping the sound name inside TikTok attaches it natively with proper credit, which the algorithm treats better than a re-uploaded audio file." },
+        { "question": "Does the MP3 keep artist and title information?", "answer": "The file carries a name built from the post title. TikTok does not expose clean ID3 tags, so you may want to fill in artist and album yourself in your music player." },
+        { "question": "Why is the audio quality not higher?", "answer": "We return the stream TikTok hosts, and nothing better exists on their end. Any tool promising 320 kbps from a TikTok is upsampling a 128 kbps source, which adds file size but no real detail." },
+        { "question": "Can I convert a TikTok to WAV or M4A instead?", "answer": "Not from this page. We hand back the MP3 as TikTok stores it. Converting to another format afterwards is a one-step job in any audio editor or free converter." },
+        { "question": "Does this work for slideshow posts?", "answer": "Yes. Photo carousels carry an audio track just like videos do, and the Save audio button appears above the photo grid." }
       ]
     },
     "photos": {
@@ -156,7 +168,13 @@
         { "question": "Are the photos full resolution?", "answer": "Yes. We serve the original-size image TikTok hosts, with no compression on our side." },
         { "question": "Can I save all photos at once?", "answer": "Yes. Tap Download all photos and we will bundle every image into a single zip file." },
         { "question": "Is the audio of the photo post included?", "answer": "The audio comes as a separate MP3 button right above the photo grid, so you can save it on its own." },
-        { "question": "Does it work on iPhone and Android?", "answer": "Yes. Pasting and saving both work directly from your phone's browser." }
+        { "question": "Does it work on iPhone and Android?", "answer": "Yes. Pasting and saving both work directly from your phone's browser." },
+        { "question": "Why not just take a screenshot?", "answer": "A screenshot captures at your screen resolution and includes the interface. The original file is usually two to three times larger in pixel terms and has no buttons or captions covering it." },
+        { "question": "Does the creator get notified when I save a photo?", "answer": "No. TikTok does not notify anyone about downloads, and the request never touches your account because you are not signed in here." },
+        { "question": "Can I save photos from a private account?", "answer": "No. Only public posts are reachable. If you cannot open the link in a logged-out browser, we cannot fetch it either." },
+        { "question": "How many photos can one post have?", "answer": "TikTok currently allows up to 35 images in a single post. The zip handles the full set however many there are." },
+        { "question": "The zip is taking a while. Is it stuck?", "answer": "Bundling pulls every image before it can build the file, so a 30-photo set takes longer than a 3-photo one. Give it a few seconds before retrying." },
+        { "question": "Can I use these photos commercially?", "answer": "Not without permission. Downloading changes nothing about ownership, and copyright stays with whoever made the images." }
       ]
     },
     "carousel": {
@@ -166,8 +184,352 @@
         { "question": "How do I download a TikTok carousel?", "answer": "Paste the post link at the top of the page. We show every photo in a grid and offer a Download all button to bundle the whole set." },
         { "question": "Will I get every photo in the post?", "answer": "Yes. The zip contains every image in the original order, in full quality." },
         { "question": "Is the audio inside the zip?", "answer": "No, we keep the audio as a separate MP3 button so you can save it on its own without unpacking the zip." },
-        { "question": "Why are carousels sometimes called slideshows?", "answer": "Different apps use different names. The data is the same: a TikTok post made of several photos." }
+        { "question": "Why are carousels sometimes called slideshows?", "answer": "Different apps use different names. The data is the same: a TikTok post made of several photos." },
+        { "question": "How many images can I download at once?", "answer": "As many as the post contains. TikTok caps carousels at 35 images and the zip handles the full set." },
+        { "question": "Why is this slower than downloading a video?", "answer": "We fetch every image before building the zip, so the wait scales with the number of pictures. Large sets take a few seconds longer than a single video." },
+        { "question": "Can I download just one photo from the carousel?", "answer": "Yes. Every image in the grid has its own save button, so you can take one without touching the zip." },
+        { "question": "Do the files keep their original order?", "answer": "Yes. Each file is numbered by its position in the post, so sequential content still reads correctly after unpacking." },
+        { "question": "Can I download a carousel from a private account?", "answer": "No. Only public posts can be fetched. If the link does not open in a logged-out browser, it will not work here." },
+        { "question": "Does the zip include the caption or hashtags?", "answer": "No. The zip holds the images only. If you need the caption, copy it from the post before downloading." }
       ]
+    }
+  },
+  "content": {
+    "home": {
+      "intro": {
+        "title": "What this TikTok downloader actually does",
+        "paragraphs": [
+          "TikTok does not give you a clean way to save a video. The in-app download button burns a watermark across the frame and stamps the creator's username into the corner, which makes the clip close to useless anywhere outside TikTok itself. Videos the creator marked as non-downloadable do not even offer that much. This page fills the gap: paste a public TikTok link and you get the original MP4 back, the same file TikTok streams into your feed, with no overlay on it.",
+          "Everything runs through your browser. There is no app to install, no account to create, and no queue to sit in. When you paste a link we read the post's public details, pull the direct video URL, and hand it to your browser as an ordinary file download. Nothing about the video stays on our servers afterwards, and we never see anything you have not pasted in yourself.",
+          "Quality depends on what the creator uploaded. Most TikToks are recorded at 1080p and we return that resolution when it exists, falling back to the best version TikTok kept for the post. Alongside the video you get the audio track on its own as an MP3, which helps when the sound matters more than the footage.",
+          "It handles regular videos, photo posts, and slideshows. If the link points at an image carousel rather than a video, the result switches to a photo grid with a save button under each picture and a zip of the full set."
+        ]
+      },
+      "specs": {
+        "title": "What you get for every link",
+        "subtitle": "Every download runs through the same pipeline, so the output is predictable no matter which post you paste.",
+        "columns": { "feature": "What", "value": "You get", "note": "Details" },
+        "rows": [
+          { "feature": "Video quality", "value": "Up to 1080p HD", "note": "We return the highest resolution TikTok stored for the post. Older uploads may top out at 720p." },
+          { "feature": "Watermark", "value": "Removed", "note": "The file is the original frame with no TikTok logo and no username overlay." },
+          { "feature": "Video format", "value": "MP4 (H.264)", "note": "Plays natively on iOS, Android, Windows, macOS, and every major editor." },
+          { "feature": "Audio", "value": "MP3, around 128 kbps", "note": "Saved as its own file so you can take the sound without the footage." },
+          { "feature": "Photo posts", "value": "Full-size JPG", "note": "Original dimensions, no recompression. Available one by one or as a single zip." },
+          { "feature": "Cost and limits", "value": "Free, no account", "note": "No daily cap for normal use. We only slow down bursts that look automated." }
+        ]
+      },
+      "guides": {
+        "title": "How to download a TikTok on your device",
+        "subtitle": "The steps are nearly identical everywhere. The real difference is where the file lands afterwards.",
+        "platforms": [
+          {
+            "name": "iPhone and iPad",
+            "steps": [
+              "Open the TikTok app, find the video, and tap the Share arrow on the right side.",
+              "Tap Copy link. If you are on tiktok.com in Safari instead, copy the address from the URL bar.",
+              "Come back to this page, tap the input, and choose Paste from the popup.",
+              "Tap Download. Safari saves the file into Files, and you can move it into Photos from there."
+            ]
+          },
+          {
+            "name": "Android",
+            "steps": [
+              "In the TikTok app, tap Share on the video and choose Copy link.",
+              "Switch to Chrome, open this page, and long-press the input to paste.",
+              "Hit Download and confirm the save if Chrome asks.",
+              "The video lands in your Downloads folder and shows up in Gallery within a minute."
+            ]
+          },
+          {
+            "name": "Windows PC",
+            "steps": [
+              "Open tiktok.com in any browser and click the video you want.",
+              "Click Share under the video, then Copy link. Copying the URL from the address bar works too.",
+              "Paste it into the box at the top of this page and press Enter.",
+              "Choose HD and the file goes straight to your Downloads folder."
+            ]
+          },
+          {
+            "name": "Mac",
+            "steps": [
+              "Copy the link from the TikTok app on your phone and AirDrop it over, or open tiktok.com in Safari.",
+              "Paste the link into the field above with Cmd+V.",
+              "Click Download and pick the quality you want.",
+              "Safari drops the MP4 into Downloads, ready for Final Cut, Premiere, or QuickTime."
+            ]
+          }
+        ]
+      },
+      "useCases": {
+        "title": "Why people save TikToks",
+        "subtitle": "A watermark-free copy is worth far more than a screen recording in every one of these situations.",
+        "items": [
+          {
+            "title": "Reposting to other platforms",
+            "body": "A clip carrying a TikTok watermark gets pushed down by Instagram Reels and YouTube Shorts, both of which demote recycled content they can identify. A clean file gives the same video a fair shot on each platform."
+          },
+          {
+            "title": "Editing and remixing",
+            "body": "Editors need source footage without a logo bouncing around the frame. Saving the raw MP4 lets you cut, caption, and colour-grade without working around an overlay you cannot remove."
+          },
+          {
+            "title": "Keeping a copy offline",
+            "body": "Posts disappear. Creators delete them, accounts go private, and moderation removes things without warning. If a video matters to you, a copy on your own drive is the only real guarantee."
+          }
+        ]
+      }
+    },
+    "mp3": {
+      "intro": {
+        "title": "Turning a TikTok into an MP3",
+        "paragraphs": [
+          "TikTok is where a lot of music gets discovered now, but the app gives you no way to keep the sound. You can save a video to your drafts or add a sound to your favourites, and both of those only work inside TikTok. The moment you want the audio as a file, on your own device, in a player of your choice, the app is a dead end.",
+          "This page pulls the audio track out of the post and hands it back as an MP3. It works with the original sound a creator recorded, licensed music attached to the video, voiceovers, and the audio bed under a photo slideshow. Whatever the post plays, you get as a file.",
+          "The extraction happens on our side and takes a couple of seconds. You are not re-recording a screen capture or taping your own speaker output, so there is no quality loss, no background hiss, and no notification sound accidentally baked into the track.",
+          "Files come out around 128 kbps, which is what TikTok serves. That is plenty for listening, for using as a sample, or for dropping under a video edit. It will not match a studio master, because no such version exists on TikTok's side to begin with."
+        ]
+      },
+      "specs": {
+        "title": "What the MP3 file looks like",
+        "subtitle": "Every audio download comes out the same way, whether the source was a video or a photo post.",
+        "columns": { "feature": "Property", "value": "Value", "note": "What it means" },
+        "rows": [
+          { "feature": "Format", "value": "MP3", "note": "Opens in every music player, phone, and editor without conversion." },
+          { "feature": "Bitrate", "value": "About 128 kbps", "note": "The quality TikTok stores. We pass it through untouched rather than re-encoding it." },
+          { "feature": "Length", "value": "Full track", "note": "You get the audio for as long as the post plays it, not a trimmed preview." },
+          { "feature": "Watermark", "value": "None", "note": "No spoken tag, no beep, no branding layered over the sound." },
+          { "feature": "Source posts", "value": "Videos and slideshows", "note": "Photo carousels carry an audio track too, and it downloads the same way." },
+          { "feature": "Cost", "value": "Free", "note": "No account, no install, no cap for normal use." }
+        ]
+      },
+      "guides": {
+        "title": "How to save TikTok audio on your device",
+        "subtitle": "Grabbing the link works the same everywhere. Where the MP3 ends up is what changes.",
+        "platforms": [
+          {
+            "name": "iPhone and iPad",
+            "steps": [
+              "Tap Share on the TikTok, then Copy link.",
+              "Open this page in Safari and paste the link into the field.",
+              "Tap Download, then look for Save audio (MP3) in the card that appears.",
+              "The file goes to Files. Open it there or import it into your music app."
+            ]
+          },
+          {
+            "name": "Android",
+            "steps": [
+              "Use Share then Copy link inside the TikTok app.",
+              "Paste the link here in Chrome and tap Download.",
+              "Choose Save audio (MP3) from the result card.",
+              "The MP3 lands in Downloads and most music players pick it up automatically."
+            ]
+          },
+          {
+            "name": "Windows PC",
+            "steps": [
+              "Copy the video URL from the address bar on tiktok.com.",
+              "Paste it into the box above and press Enter.",
+              "Click Save audio (MP3) once the result loads.",
+              "Find the file in Downloads, ready for any player or editor."
+            ]
+          },
+          {
+            "name": "Mac",
+            "steps": [
+              "Open the TikTok in Safari or Chrome and copy the URL.",
+              "Paste it here with Cmd+V and submit.",
+              "Click Save audio (MP3).",
+              "Drag the file from Downloads straight into Music, Logic, or your editor."
+            ]
+          }
+        ]
+      },
+      "useCases": {
+        "title": "What people do with TikTok audio",
+        "subtitle": "The sound often outlives the video it came from.",
+        "items": [
+          {
+            "title": "Finding music you cannot name",
+            "body": "A sound catches your ear in the feed and the title is nowhere on screen. Saving the MP3 means you can run it through a music identifier, or just keep listening while you work out what it is."
+          },
+          {
+            "title": "Using a sound in your own edits",
+            "body": "Trending audio drives reach. Having the track as a file lets you cut your own footage to it in a proper editor instead of fighting TikTok's in-app timeline."
+          },
+          {
+            "title": "Keeping voice clips and interviews",
+            "body": "Not every TikTok is music. Interviews, storytimes, and lectures are worth keeping as audio you can replay without burning data on the video."
+          }
+        ]
+      }
+    },
+    "photos": {
+      "intro": {
+        "title": "Saving photos from TikTok posts",
+        "paragraphs": [
+          "Not everything on TikTok is video. Photo posts have quietly become a large part of the feed, and they behave differently from clips: still images with an audio bed, swiped through rather than played. TikTok gives you no save button for them at all, so the usual workaround is a screenshot.",
+          "A screenshot costs you a lot. It captures at your screen's resolution rather than the image's, bakes in the interface, and crops away whatever sat under the caption or the sidebar. What you keep is a picture of a picture.",
+          "This page returns the actual image files instead. Paste a link to a photo post and you get every picture in the set at the dimensions the creator uploaded, with no interface elements, no compression pass from us, and nothing trimmed off the edges.",
+          "Each photo gets its own save button, so you can take only the one you wanted. If you want the whole thing, one button bundles every image into a zip in the original order. The audio track is available separately as an MP3."
+        ]
+      },
+      "specs": {
+        "title": "What you get from a photo post",
+        "subtitle": "The same output every time, whether the post holds two pictures or forty.",
+        "columns": { "feature": "Property", "value": "Value", "note": "What it means" },
+        "rows": [
+          { "feature": "Image quality", "value": "Original resolution", "note": "The file TikTok hosts, not a screen-sized copy. Usually well above what a screenshot captures." },
+          { "feature": "Format", "value": "JPG", "note": "Standard format that opens anywhere and imports into any editor." },
+          { "feature": "Compression", "value": "None from us", "note": "We pass the file through untouched, with no second compression pass on top of TikTok's." },
+          { "feature": "Interface elements", "value": "None", "note": "No captions, buttons, usernames, or sidebar baked into the picture." },
+          { "feature": "Bulk download", "value": "Zip of the full set", "note": "Every image in the original order, in one file." },
+          { "feature": "Audio", "value": "Separate MP3", "note": "Kept out of the zip so you can grab the sound without unpacking anything." }
+        ]
+      },
+      "guides": {
+        "title": "How to save TikTok photos on your device",
+        "subtitle": "Copy the post link the same way you would for a video. The rest is one tap per picture.",
+        "platforms": [
+          {
+            "name": "iPhone and iPad",
+            "steps": [
+              "Open the photo post in TikTok and tap the Share arrow.",
+              "Choose Copy link.",
+              "Paste it into the field on this page and tap Download.",
+              "Tap Save photo under any picture. Safari puts it in Files, and you can add it to Photos from there."
+            ]
+          },
+          {
+            "name": "Android",
+            "steps": [
+              "Tap Share on the photo post, then Copy link.",
+              "Open this page in Chrome and paste the link.",
+              "Tap Save photo on the images you want, or Download all photos for the set.",
+              "Files land in Downloads and appear in Gallery shortly after."
+            ]
+          },
+          {
+            "name": "Windows PC",
+            "steps": [
+              "Open the photo post on tiktok.com and copy the URL from the address bar.",
+              "Paste it into the box above and press Enter.",
+              "Click Save photo under individual pictures, or Download all photos for a zip.",
+              "Right-click the zip in Downloads and choose Extract All."
+            ]
+          },
+          {
+            "name": "Mac",
+            "steps": [
+              "Copy the post URL from Safari or Chrome.",
+              "Paste it here with Cmd+V and submit.",
+              "Save pictures one at a time, or grab the zip.",
+              "Double-click the zip in Downloads and Finder unpacks it for you."
+            ]
+          }
+        ]
+      },
+      "useCases": {
+        "title": "Why people save TikTok photos",
+        "subtitle": "Screenshots lose too much detail for any of these to work well.",
+        "items": [
+          {
+            "title": "Building mood boards and references",
+            "body": "Designers, stylists, and tattoo artists collect visual references constantly. Full-resolution files are worth keeping. Cropped screenshots with a caption across the middle are not."
+          },
+          {
+            "title": "Reposting to other feeds",
+            "body": "Instagram and Pinterest both render images at higher quality than a phone screenshot can supply. Starting from the original file is the difference between sharp and soft."
+          },
+          {
+            "title": "Keeping recipes, guides, and receipts",
+            "body": "A lot of genuinely useful information lives in photo carousels: recipes, workout plans, step-by-step guides. Saving the set means you still have it when the post comes down."
+          }
+        ]
+      }
+    },
+    "carousel": {
+      "intro": {
+        "title": "Downloading a full TikTok carousel",
+        "paragraphs": [
+          "Carousel, slideshow, photo post: three names for the same thing, which is a TikTok made of several images you swipe through rather than a video you watch. The naming is inconsistent because TikTok itself has changed what it calls the format more than once.",
+          "The practical problem stays the same either way. There is no download button, and saving a set one screenshot at a time means swiping, capturing, and cropping every image by hand. A twenty-image post turns into several minutes of tedious work, and you still end up with screen-resolution copies.",
+          "This page treats the whole post as one unit. Paste the link and every image in the carousel comes back in its original order and original size. One button bundles the entire set into a zip, so a forty-image post is a single download rather than forty.",
+          "The order matters more than people expect. Carousels are often sequential: steps in a recipe, panels of a comic, before and after shots. The zip preserves the numbering so the sequence survives the download."
+        ]
+      },
+      "specs": {
+        "title": "What the zip contains",
+        "subtitle": "One file per post, built the same way every time.",
+        "columns": { "feature": "Property", "value": "Value", "note": "What it means" },
+        "rows": [
+          { "feature": "Images included", "value": "Every photo in the post", "note": "Nothing is skipped or sampled, up to TikTok's 35-image limit." },
+          { "feature": "Order", "value": "Original sequence", "note": "Files are numbered so a step-by-step post still reads in the right order." },
+          { "feature": "Resolution", "value": "As uploaded", "note": "Full size, never resized to fit a screen." },
+          { "feature": "Format", "value": "JPG inside a zip", "note": "Unpacks with the built-in tools on Windows, macOS, iOS, and Android." },
+          { "feature": "Audio", "value": "Separate MP3", "note": "Left out of the zip on purpose so you can grab the sound on its own." },
+          { "feature": "Cost", "value": "Free", "note": "No account and no per-post charge, however many images it holds." }
+        ]
+      },
+      "guides": {
+        "title": "How to download a carousel on your device",
+        "subtitle": "One link in, one zip out. Unpacking is the only step that differs by platform.",
+        "platforms": [
+          {
+            "name": "iPhone and iPad",
+            "steps": [
+              "Tap Share on the carousel post, then Copy link.",
+              "Paste the link into the field on this page.",
+              "Tap Download all photos and wait for the bundle to build.",
+              "Open Files, tap the zip, and iOS unpacks it into a folder of its own."
+            ]
+          },
+          {
+            "name": "Android",
+            "steps": [
+              "Copy the post link with Share, then Copy link.",
+              "Paste it here in Chrome and tap Download all photos.",
+              "Confirm the save when Chrome asks.",
+              "Open Files, tap the zip, and choose Extract."
+            ]
+          },
+          {
+            "name": "Windows PC",
+            "steps": [
+              "Copy the carousel URL from the address bar on tiktok.com.",
+              "Paste it into the box above and press Enter.",
+              "Click Download all photos.",
+              "Right-click the zip in Downloads and pick Extract All."
+            ]
+          },
+          {
+            "name": "Mac",
+            "steps": [
+              "Copy the post URL from your browser.",
+              "Paste it here and submit.",
+              "Click Download all photos.",
+              "Double-click the zip in Downloads and Archive Utility unpacks it automatically."
+            ]
+          }
+        ]
+      },
+      "useCases": {
+        "title": "Where carousel downloads earn their keep",
+        "subtitle": "The value is in keeping the set together, not just the individual pictures.",
+        "items": [
+          {
+            "title": "Saving step-by-step content",
+            "body": "Recipes, tutorials, and workout plans are usually posted as ordered sets. Screenshotting them one at a time scrambles the order sooner or later. The zip does not."
+          },
+          {
+            "title": "Archiving your own posts",
+            "body": "Creators lose access to their own work when an account gets locked or a post is removed. Pulling your carousels down as zips gives you a backup that does not depend on the platform."
+          },
+          {
+            "title": "Collecting reference sets",
+            "body": "Comic panels, outfit breakdowns, before-and-after series: these only make sense as a group. Keeping them bundled means the context survives alongside the images."
+          }
+        ]
+      }
     }
   }
 }

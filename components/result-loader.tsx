@@ -1,8 +1,6 @@
 /**
- * Skeleton mirroring the real result card. Used in two places:
- *   1. app/[lang]/loading.tsx — Next soft-navigation indicator
- *   2. The Suspense fallback inside variant pages — flushes immediately
- *      while the upstream RapidAPI fetch is in flight
+ * Skeleton mirroring the real result card. Shown by <ResultPanel /> while
+ * the /api/fetch request is in flight.
  *
  * The wrapper / article / inner layout match the live <DownloadResult>
  * exactly, so the swap between skeleton and real result causes zero

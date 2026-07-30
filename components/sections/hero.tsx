@@ -5,13 +5,11 @@ import {
   SparklesIcon,
 } from "hugeicons-react";
 
-import { DownloaderForm } from "@/components/downloader-form";
+import { DownloaderForm } from "@/components/downloader/downloader-form";
 import type { Dictionary } from "@/types/dictionary";
-import type { Locale } from "@/types/locale";
 
 interface HeroProps {
   dict: Dictionary;
-  locale: Locale;
   /**
    * Optional H1 override. Variant landing pages (/mp3, /photos,
    * /carousel) pass their own keyword-targeted heading here so the home
@@ -20,10 +18,6 @@ interface HeroProps {
   heading?: string;
   /** Optional subtitle override matching the variant H1. */
   description?: string;
-  /** Pre-fills the form input from ?url= when the page is a result render. */
-  initialUrl?: string | null;
-  /** Localized error string from the server-side fetch (or null on success). */
-  errorMessage?: string | null;
 }
 
 /**
@@ -33,14 +27,7 @@ interface HeroProps {
  * with the primary action. There's only one heading on the page now —
  * the old marketing-style hero block was removed to avoid duplication.
  */
-export function Hero({
-  dict,
-  locale: _locale,
-  heading,
-  description,
-  initialUrl,
-  errorMessage,
-}: HeroProps) {
+export function Hero({ dict, heading, description }: HeroProps) {
   const headingText = heading ?? dict.hero.title;
   const descriptionText = description ?? dict.hero.subtitle;
   const trustBadges = [
@@ -73,11 +60,7 @@ export function Hero({
          * Desktop: mx-0 reverts to the contained max-width.
          */}
         <div className="-mx-4 w-screen sm:mx-0 sm:w-full sm:max-w-2xl">
-          <DownloaderForm
-            formDict={dict.hero.form}
-            initialUrl={initialUrl}
-            errorMessage={errorMessage}
-          />
+          <DownloaderForm />
         </div>
 
         <ul className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-muted-foreground sm:gap-x-6 sm:gap-y-3 sm:text-sm">
