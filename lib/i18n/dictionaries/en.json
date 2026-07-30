@@ -7,7 +7,7 @@
   },
   "nav": {
     "skipToContent": "Skip to content",
-    "brand": "TikSaver",
+    "brand": "TikTok Downloader",
     "tagline": "Free TikTok downloader",
     "languageMenu": "Choose language",
     "currentLanguage": "Language"
@@ -132,65 +132,197 @@
     "home": {
       "sectionTitle": "Common questions",
       "items": [
-        { "question": "How do I download a TikTok video?", "answer": "Open the TikTok app or tiktok.com, tap Share on the video, and choose Copy link. Paste the link into the box at the top of this page and pick HD or standard quality." },
-        { "question": "Will the saved video have a watermark?", "answer": "No. We give you back the original frame without the TikTok logo overlaid, so the video is ready to repost or save for later." },
-        { "question": "Is the downloader free?", "answer": "Yes. Every feature here is free. No sign up, no app to install, no credit card." },
-        { "question": "What video quality can I get?", "answer": "HD when the original was uploaded in HD, otherwise the highest quality TikTok stored for that post." },
-        { "question": "Does it work on iPhone and Android?", "answer": "Yes. The page is built mobile-first, so pasting and saving both work directly from your phone's browser." },
-        { "question": "Can I download private or friends-only videos?", "answer": "No. We can only reach posts that are public. If the account is private or the video is limited to friends, there is nothing for us to fetch." },
-        { "question": "Do you store the videos I download?", "answer": "No. The link is used to look up the post and the file streams straight through to your browser. We keep a short-lived cache of post details so repeat links are faster, and nothing else." },
-        { "question": "Is downloading TikTok videos legal?", "answer": "Saving a video for your own offline viewing is generally fine. Republishing someone else's work, monetising it, or passing it off as your own is not. Copyright stays with the creator no matter how you got the file." },
-        { "question": "Why did my download fail?", "answer": "The usual causes are a private account, a deleted post, a region-locked video, or a mistyped link. Open the URL in a browser first. If TikTok cannot show it to you, we cannot fetch it either." },
-        { "question": "Is there a limit on how many videos I can save?", "answer": "There is no daily quota. We do cap how quickly requests can arrive from one connection, so pasting dozens of links back to back may ask you to wait a minute." },
-        { "question": "Can I download a video in 4K?", "answer": "Only if the creator uploaded it that way, which is rare. TikTok re-encodes most uploads to 1080p or lower, and we cannot return quality that does not exist on their servers." }
+        {
+          "question": "How do I download a TikTok video?",
+          "answer": "Open the TikTok app or tiktok.com, tap Share on the video, and choose Copy link. Paste the link into the box at the top of this page and pick HD or standard quality."
+        },
+        {
+          "question": "Will the saved video have a watermark?",
+          "answer": "No. We give you back the original frame without the TikTok logo overlaid, so the video is ready to repost or save for later."
+        },
+        {
+          "question": "Is the downloader free?",
+          "answer": "Yes. Every feature here is free. No sign up, no app to install, no credit card."
+        },
+        {
+          "question": "What video quality can I get?",
+          "answer": "HD when the original was uploaded in HD, otherwise the highest quality TikTok stored for that post."
+        },
+        {
+          "question": "Does it work on iPhone and Android?",
+          "answer": "Yes. The page is built mobile-first, so pasting and saving both work directly from your phone's browser."
+        },
+        {
+          "question": "Can I download private or friends-only videos?",
+          "answer": "No. We can only reach posts that are public. If the account is private or the video is limited to friends, there is nothing for us to fetch."
+        },
+        {
+          "question": "Do you store the videos I download?",
+          "answer": "No. The link is used to look up the post and the file streams straight through to your browser. We keep a short-lived cache of post details so repeat links are faster, and nothing else."
+        },
+        {
+          "question": "Is downloading TikTok videos legal?",
+          "answer": "Saving a video for your own offline viewing is generally fine. Republishing someone else's work, monetising it, or passing it off as your own is not. Copyright stays with the creator no matter how you got the file."
+        },
+        {
+          "question": "Why did my download fail?",
+          "answer": "The usual causes are a private account, a deleted post, a region-locked video, or a mistyped link. Open the URL in a browser first. If TikTok cannot show it to you, we cannot fetch it either."
+        },
+        {
+          "question": "Is there a limit on how many videos I can save?",
+          "answer": "There is no daily quota. We do cap how quickly requests can arrive from one connection, so pasting dozens of links back to back may ask you to wait a minute."
+        },
+        {
+          "question": "Can I download a video in 4K?",
+          "answer": "Only if the creator uploaded it that way, which is rare. TikTok re-encodes most uploads to 1080p or lower, and we cannot return quality that does not exist on their servers."
+        }
       ]
     },
     "mp3": {
       "sectionTitle": "TikTok MP3 questions",
       "items": [
-        { "question": "How do I save TikTok audio as MP3?", "answer": "Paste a TikTok video link in the box at the top, then look for Save audio (MP3) in the result card. The audio downloads as an .mp3 file." },
-        { "question": "Does the MP3 have any watermark or voice tag?", "answer": "No. The MP3 is the clean original sound from the video, with nothing layered on top." },
-        { "question": "Can I extract music from any TikTok?", "answer": "Yes, as long as the post is public. Both regular videos and slideshow posts include the original audio track." },
-        { "question": "What is the MP3 quality?", "answer": "We use the highest quality audio stream TikTok serves. Most files come out around 128 kbps, which is plenty for sharing or remixing." },
-        { "question": "Do I need to install anything?", "answer": "No. Everything runs in the browser. Paste the link, save the file, done." },
-        { "question": "Is the audio the full song or just the clip used in the video?", "answer": "You get exactly what the post contains. TikTok sounds are usually 15 to 60 second cuts, so the MP3 matches that length rather than the full commercial track." },
-        { "question": "Can I use a downloaded sound in my own TikTok?", "answer": "Technically yes, but you rarely need to. Tapping the sound name inside TikTok attaches it natively with proper credit, which the algorithm treats better than a re-uploaded audio file." },
-        { "question": "Does the MP3 keep artist and title information?", "answer": "The file carries a name built from the post title. TikTok does not expose clean ID3 tags, so you may want to fill in artist and album yourself in your music player." },
-        { "question": "Why is the audio quality not higher?", "answer": "We return the stream TikTok hosts, and nothing better exists on their end. Any tool promising 320 kbps from a TikTok is upsampling a 128 kbps source, which adds file size but no real detail." },
-        { "question": "Can I convert a TikTok to WAV or M4A instead?", "answer": "Not from this page. We hand back the MP3 as TikTok stores it. Converting to another format afterwards is a one-step job in any audio editor or free converter." },
-        { "question": "Does this work for slideshow posts?", "answer": "Yes. Photo carousels carry an audio track just like videos do, and the Save audio button appears above the photo grid." }
+        {
+          "question": "How do I save TikTok audio as MP3?",
+          "answer": "Paste a TikTok video link in the box at the top, then look for Save audio (MP3) in the result card. The audio downloads as an .mp3 file."
+        },
+        {
+          "question": "Does the MP3 have any watermark or voice tag?",
+          "answer": "No. The MP3 is the clean original sound from the video, with nothing layered on top."
+        },
+        {
+          "question": "Can I extract music from any TikTok?",
+          "answer": "Yes, as long as the post is public. Both regular videos and slideshow posts include the original audio track."
+        },
+        {
+          "question": "What is the MP3 quality?",
+          "answer": "We use the highest quality audio stream TikTok serves. Most files come out around 128 kbps, which is plenty for sharing or remixing."
+        },
+        {
+          "question": "Do I need to install anything?",
+          "answer": "No. Everything runs in the browser. Paste the link, save the file, done."
+        },
+        {
+          "question": "Is the audio the full song or just the clip used in the video?",
+          "answer": "You get exactly what the post contains. TikTok sounds are usually 15 to 60 second cuts, so the MP3 matches that length rather than the full commercial track."
+        },
+        {
+          "question": "Can I use a downloaded sound in my own TikTok?",
+          "answer": "Technically yes, but you rarely need to. Tapping the sound name inside TikTok attaches it natively with proper credit, which the algorithm treats better than a re-uploaded audio file."
+        },
+        {
+          "question": "Does the MP3 keep artist and title information?",
+          "answer": "The file carries a name built from the post title. TikTok does not expose clean ID3 tags, so you may want to fill in artist and album yourself in your music player."
+        },
+        {
+          "question": "Why is the audio quality not higher?",
+          "answer": "We return the stream TikTok hosts, and nothing better exists on their end. Any tool promising 320 kbps from a TikTok is upsampling a 128 kbps source, which adds file size but no real detail."
+        },
+        {
+          "question": "Can I convert a TikTok to WAV or M4A instead?",
+          "answer": "Not from this page. We hand back the MP3 as TikTok stores it. Converting to another format afterwards is a one-step job in any audio editor or free converter."
+        },
+        {
+          "question": "Does this work for slideshow posts?",
+          "answer": "Yes. Photo carousels carry an audio track just like videos do, and the Save audio button appears above the photo grid."
+        }
       ]
     },
     "photos": {
       "sectionTitle": "TikTok photo questions",
       "items": [
-        { "question": "How do I save photos from TikTok?", "answer": "Paste a link to a TikTok photo post. Each picture in the result card has its own Save button." },
-        { "question": "Are the photos full resolution?", "answer": "Yes. We serve the original-size image TikTok hosts, with no compression on our side." },
-        { "question": "Can I save all photos at once?", "answer": "Yes. Tap Download all photos and we will bundle every image into a single zip file." },
-        { "question": "Is the audio of the photo post included?", "answer": "The audio comes as a separate MP3 button right above the photo grid, so you can save it on its own." },
-        { "question": "Does it work on iPhone and Android?", "answer": "Yes. Pasting and saving both work directly from your phone's browser." },
-        { "question": "Why not just take a screenshot?", "answer": "A screenshot captures at your screen resolution and includes the interface. The original file is usually two to three times larger in pixel terms and has no buttons or captions covering it." },
-        { "question": "Does the creator get notified when I save a photo?", "answer": "No. TikTok does not notify anyone about downloads, and the request never touches your account because you are not signed in here." },
-        { "question": "Can I save photos from a private account?", "answer": "No. Only public posts are reachable. If you cannot open the link in a logged-out browser, we cannot fetch it either." },
-        { "question": "How many photos can one post have?", "answer": "TikTok currently allows up to 35 images in a single post. The zip handles the full set however many there are." },
-        { "question": "The zip is taking a while. Is it stuck?", "answer": "Bundling pulls every image before it can build the file, so a 30-photo set takes longer than a 3-photo one. Give it a few seconds before retrying." },
-        { "question": "Can I use these photos commercially?", "answer": "Not without permission. Downloading changes nothing about ownership, and copyright stays with whoever made the images." }
+        {
+          "question": "How do I save photos from TikTok?",
+          "answer": "Paste a link to a TikTok photo post. Each picture in the result card has its own Save button."
+        },
+        {
+          "question": "Are the photos full resolution?",
+          "answer": "Yes. We serve the original-size image TikTok hosts, with no compression on our side."
+        },
+        {
+          "question": "Can I save all photos at once?",
+          "answer": "Yes. Tap Download all photos and we will bundle every image into a single zip file."
+        },
+        {
+          "question": "Is the audio of the photo post included?",
+          "answer": "The audio comes as a separate MP3 button right above the photo grid, so you can save it on its own."
+        },
+        {
+          "question": "Does it work on iPhone and Android?",
+          "answer": "Yes. Pasting and saving both work directly from your phone's browser."
+        },
+        {
+          "question": "Why not just take a screenshot?",
+          "answer": "A screenshot captures at your screen resolution and includes the interface. The original file is usually two to three times larger in pixel terms and has no buttons or captions covering it."
+        },
+        {
+          "question": "Does the creator get notified when I save a photo?",
+          "answer": "No. TikTok does not notify anyone about downloads, and the request never touches your account because you are not signed in here."
+        },
+        {
+          "question": "Can I save photos from a private account?",
+          "answer": "No. Only public posts are reachable. If you cannot open the link in a logged-out browser, we cannot fetch it either."
+        },
+        {
+          "question": "How many photos can one post have?",
+          "answer": "TikTok currently allows up to 35 images in a single post. The zip handles the full set however many there are."
+        },
+        {
+          "question": "The zip is taking a while. Is it stuck?",
+          "answer": "Bundling pulls every image before it can build the file, so a 30-photo set takes longer than a 3-photo one. Give it a few seconds before retrying."
+        },
+        {
+          "question": "Can I use these photos commercially?",
+          "answer": "Not without permission. Downloading changes nothing about ownership, and copyright stays with whoever made the images."
+        }
       ]
     },
     "carousel": {
       "sectionTitle": "TikTok carousel questions",
       "items": [
-        { "question": "What is a TikTok carousel?", "answer": "A carousel, sometimes called a photo post or slideshow, is a TikTok post made of multiple photos instead of a single video." },
-        { "question": "How do I download a TikTok carousel?", "answer": "Paste the post link at the top of the page. We show every photo in a grid and offer a Download all button to bundle the whole set." },
-        { "question": "Will I get every photo in the post?", "answer": "Yes. The zip contains every image in the original order, in full quality." },
-        { "question": "Is the audio inside the zip?", "answer": "No, we keep the audio as a separate MP3 button so you can save it on its own without unpacking the zip." },
-        { "question": "Why are carousels sometimes called slideshows?", "answer": "Different apps use different names. The data is the same: a TikTok post made of several photos." },
-        { "question": "How many images can I download at once?", "answer": "As many as the post contains. TikTok caps carousels at 35 images and the zip handles the full set." },
-        { "question": "Why is this slower than downloading a video?", "answer": "We fetch every image before building the zip, so the wait scales with the number of pictures. Large sets take a few seconds longer than a single video." },
-        { "question": "Can I download just one photo from the carousel?", "answer": "Yes. Every image in the grid has its own save button, so you can take one without touching the zip." },
-        { "question": "Do the files keep their original order?", "answer": "Yes. Each file is numbered by its position in the post, so sequential content still reads correctly after unpacking." },
-        { "question": "Can I download a carousel from a private account?", "answer": "No. Only public posts can be fetched. If the link does not open in a logged-out browser, it will not work here." },
-        { "question": "Does the zip include the caption or hashtags?", "answer": "No. The zip holds the images only. If you need the caption, copy it from the post before downloading." }
+        {
+          "question": "What is a TikTok carousel?",
+          "answer": "A carousel, sometimes called a photo post or slideshow, is a TikTok post made of multiple photos instead of a single video."
+        },
+        {
+          "question": "How do I download a TikTok carousel?",
+          "answer": "Paste the post link at the top of the page. We show every photo in a grid and offer a Download all button to bundle the whole set."
+        },
+        {
+          "question": "Will I get every photo in the post?",
+          "answer": "Yes. The zip contains every image in the original order, in full quality."
+        },
+        {
+          "question": "Is the audio inside the zip?",
+          "answer": "No, we keep the audio as a separate MP3 button so you can save it on its own without unpacking the zip."
+        },
+        {
+          "question": "Why are carousels sometimes called slideshows?",
+          "answer": "Different apps use different names. The data is the same: a TikTok post made of several photos."
+        },
+        {
+          "question": "How many images can I download at once?",
+          "answer": "As many as the post contains. TikTok caps carousels at 35 images and the zip handles the full set."
+        },
+        {
+          "question": "Why is this slower than downloading a video?",
+          "answer": "We fetch every image before building the zip, so the wait scales with the number of pictures. Large sets take a few seconds longer than a single video."
+        },
+        {
+          "question": "Can I download just one photo from the carousel?",
+          "answer": "Yes. Every image in the grid has its own save button, so you can take one without touching the zip."
+        },
+        {
+          "question": "Do the files keep their original order?",
+          "answer": "Yes. Each file is numbered by its position in the post, so sequential content still reads correctly after unpacking."
+        },
+        {
+          "question": "Can I download a carousel from a private account?",
+          "answer": "No. Only public posts can be fetched. If the link does not open in a logged-out browser, it will not work here."
+        },
+        {
+          "question": "Does the zip include the caption or hashtags?",
+          "answer": "No. The zip holds the images only. If you need the caption, copy it from the post before downloading."
+        }
       ]
     }
   },
@@ -208,14 +340,42 @@
       "specs": {
         "title": "What you get for every link",
         "subtitle": "Every download runs through the same pipeline, so the output is predictable no matter which post you paste.",
-        "columns": { "feature": "What", "value": "You get", "note": "Details" },
+        "columns": {
+          "feature": "What",
+          "value": "You get",
+          "note": "Details"
+        },
         "rows": [
-          { "feature": "Video quality", "value": "Up to 1080p HD", "note": "We return the highest resolution TikTok stored for the post. Older uploads may top out at 720p." },
-          { "feature": "Watermark", "value": "Removed", "note": "The file is the original frame with no TikTok logo and no username overlay." },
-          { "feature": "Video format", "value": "MP4 (H.264)", "note": "Plays natively on iOS, Android, Windows, macOS, and every major editor." },
-          { "feature": "Audio", "value": "MP3, around 128 kbps", "note": "Saved as its own file so you can take the sound without the footage." },
-          { "feature": "Photo posts", "value": "Full-size JPG", "note": "Original dimensions, no recompression. Available one by one or as a single zip." },
-          { "feature": "Cost and limits", "value": "Free, no account", "note": "No daily cap for normal use. We only slow down bursts that look automated." }
+          {
+            "feature": "Video quality",
+            "value": "Up to 1080p HD",
+            "note": "We return the highest resolution TikTok stored for the post. Older uploads may top out at 720p."
+          },
+          {
+            "feature": "Watermark",
+            "value": "Removed",
+            "note": "The file is the original frame with no TikTok logo and no username overlay."
+          },
+          {
+            "feature": "Video format",
+            "value": "MP4 (H.264)",
+            "note": "Plays natively on iOS, Android, Windows, macOS, and every major editor."
+          },
+          {
+            "feature": "Audio",
+            "value": "MP3, around 128 kbps",
+            "note": "Saved as its own file so you can take the sound without the footage."
+          },
+          {
+            "feature": "Photo posts",
+            "value": "Full-size JPG",
+            "note": "Original dimensions, no recompression. Available one by one or as a single zip."
+          },
+          {
+            "feature": "Cost and limits",
+            "value": "Free, no account",
+            "note": "No daily cap for normal use. We only slow down bursts that look automated."
+          }
         ]
       },
       "guides": {
@@ -292,14 +452,42 @@
       "specs": {
         "title": "What the MP3 file looks like",
         "subtitle": "Every audio download comes out the same way, whether the source was a video or a photo post.",
-        "columns": { "feature": "Property", "value": "Value", "note": "What it means" },
+        "columns": {
+          "feature": "Property",
+          "value": "Value",
+          "note": "What it means"
+        },
         "rows": [
-          { "feature": "Format", "value": "MP3", "note": "Opens in every music player, phone, and editor without conversion." },
-          { "feature": "Bitrate", "value": "About 128 kbps", "note": "The quality TikTok stores. We pass it through untouched rather than re-encoding it." },
-          { "feature": "Length", "value": "Full track", "note": "You get the audio for as long as the post plays it, not a trimmed preview." },
-          { "feature": "Watermark", "value": "None", "note": "No spoken tag, no beep, no branding layered over the sound." },
-          { "feature": "Source posts", "value": "Videos and slideshows", "note": "Photo carousels carry an audio track too, and it downloads the same way." },
-          { "feature": "Cost", "value": "Free", "note": "No account, no install, no cap for normal use." }
+          {
+            "feature": "Format",
+            "value": "MP3",
+            "note": "Opens in every music player, phone, and editor without conversion."
+          },
+          {
+            "feature": "Bitrate",
+            "value": "About 128 kbps",
+            "note": "The quality TikTok stores. We pass it through untouched rather than re-encoding it."
+          },
+          {
+            "feature": "Length",
+            "value": "Full track",
+            "note": "You get the audio for as long as the post plays it, not a trimmed preview."
+          },
+          {
+            "feature": "Watermark",
+            "value": "None",
+            "note": "No spoken tag, no beep, no branding layered over the sound."
+          },
+          {
+            "feature": "Source posts",
+            "value": "Videos and slideshows",
+            "note": "Photo carousels carry an audio track too, and it downloads the same way."
+          },
+          {
+            "feature": "Cost",
+            "value": "Free",
+            "note": "No account, no install, no cap for normal use."
+          }
         ]
       },
       "guides": {
@@ -376,14 +564,42 @@
       "specs": {
         "title": "What you get from a photo post",
         "subtitle": "The same output every time, whether the post holds two pictures or forty.",
-        "columns": { "feature": "Property", "value": "Value", "note": "What it means" },
+        "columns": {
+          "feature": "Property",
+          "value": "Value",
+          "note": "What it means"
+        },
         "rows": [
-          { "feature": "Image quality", "value": "Original resolution", "note": "The file TikTok hosts, not a screen-sized copy. Usually well above what a screenshot captures." },
-          { "feature": "Format", "value": "JPG", "note": "Standard format that opens anywhere and imports into any editor." },
-          { "feature": "Compression", "value": "None from us", "note": "We pass the file through untouched, with no second compression pass on top of TikTok's." },
-          { "feature": "Interface elements", "value": "None", "note": "No captions, buttons, usernames, or sidebar baked into the picture." },
-          { "feature": "Bulk download", "value": "Zip of the full set", "note": "Every image in the original order, in one file." },
-          { "feature": "Audio", "value": "Separate MP3", "note": "Kept out of the zip so you can grab the sound without unpacking anything." }
+          {
+            "feature": "Image quality",
+            "value": "Original resolution",
+            "note": "The file TikTok hosts, not a screen-sized copy. Usually well above what a screenshot captures."
+          },
+          {
+            "feature": "Format",
+            "value": "JPG",
+            "note": "Standard format that opens anywhere and imports into any editor."
+          },
+          {
+            "feature": "Compression",
+            "value": "None from us",
+            "note": "We pass the file through untouched, with no second compression pass on top of TikTok's."
+          },
+          {
+            "feature": "Interface elements",
+            "value": "None",
+            "note": "No captions, buttons, usernames, or sidebar baked into the picture."
+          },
+          {
+            "feature": "Bulk download",
+            "value": "Zip of the full set",
+            "note": "Every image in the original order, in one file."
+          },
+          {
+            "feature": "Audio",
+            "value": "Separate MP3",
+            "note": "Kept out of the zip so you can grab the sound without unpacking anything."
+          }
         ]
       },
       "guides": {
@@ -460,14 +676,42 @@
       "specs": {
         "title": "What the zip contains",
         "subtitle": "One file per post, built the same way every time.",
-        "columns": { "feature": "Property", "value": "Value", "note": "What it means" },
+        "columns": {
+          "feature": "Property",
+          "value": "Value",
+          "note": "What it means"
+        },
         "rows": [
-          { "feature": "Images included", "value": "Every photo in the post", "note": "Nothing is skipped or sampled, up to TikTok's 35-image limit." },
-          { "feature": "Order", "value": "Original sequence", "note": "Files are numbered so a step-by-step post still reads in the right order." },
-          { "feature": "Resolution", "value": "As uploaded", "note": "Full size, never resized to fit a screen." },
-          { "feature": "Format", "value": "JPG inside a zip", "note": "Unpacks with the built-in tools on Windows, macOS, iOS, and Android." },
-          { "feature": "Audio", "value": "Separate MP3", "note": "Left out of the zip on purpose so you can grab the sound on its own." },
-          { "feature": "Cost", "value": "Free", "note": "No account and no per-post charge, however many images it holds." }
+          {
+            "feature": "Images included",
+            "value": "Every photo in the post",
+            "note": "Nothing is skipped or sampled, up to TikTok's 35-image limit."
+          },
+          {
+            "feature": "Order",
+            "value": "Original sequence",
+            "note": "Files are numbered so a step-by-step post still reads in the right order."
+          },
+          {
+            "feature": "Resolution",
+            "value": "As uploaded",
+            "note": "Full size, never resized to fit a screen."
+          },
+          {
+            "feature": "Format",
+            "value": "JPG inside a zip",
+            "note": "Unpacks with the built-in tools on Windows, macOS, iOS, and Android."
+          },
+          {
+            "feature": "Audio",
+            "value": "Separate MP3",
+            "note": "Left out of the zip on purpose so you can grab the sound on its own."
+          },
+          {
+            "feature": "Cost",
+            "value": "Free",
+            "note": "No account and no per-post charge, however many images it holds."
+          }
         ]
       },
       "guides": {

@@ -33,17 +33,22 @@ export function SiteFooter({ dict, locale }: SiteFooterProps) {
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
           <div className="space-y-3">
             {/*
-             * Logo asset already includes the wordmark, so no separate
-             * brand text. Slightly larger than the header copy because
-             * footer breathing room allows it.
+             * Same lockup as the header: square icon plus text wordmark.
+             * alt stays empty because the adjacent text already names the
+             * brand and would otherwise be announced twice.
              */}
-            <Image
-              src="/logo.png"
-              alt={dict.nav.brand}
-              width={160}
-              height={160}
-              className="h-16 w-16 object-contain"
-            />
+            <div className="flex items-center gap-2.5">
+              <Image
+                src="/logo-256.png"
+                alt=""
+                width={256}
+                height={256}
+                className="h-10 w-10 shrink-0 object-contain"
+              />
+              <span className="text-lg font-semibold tracking-tight text-foreground">
+                {dict.nav.brand}
+              </span>
+            </div>
             <p className="max-w-md text-sm text-muted-foreground">{dict.footer.tagline}</p>
           </div>
 
